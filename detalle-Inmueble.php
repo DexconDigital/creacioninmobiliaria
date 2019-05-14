@@ -1,6 +1,7 @@
 <?php $page = 'inmueble'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,13 @@
     <title>Detalle Inmueble</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
+
 <body>
-        
+    <!-- Menu -->
+    <?php include 'include/menu.php'; ?>
+    <!-- fin de menu -->
     <!-- Scripts en comun -->
     <?php include 'include/archivosfooter.php'; ?>
 </body>
+
 </html>

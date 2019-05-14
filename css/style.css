@@ -1,0 +1,35 @@
+/* Color de logo #13223f; */
+a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+        color: #13223f;
+}
+footer .container-fluid{
+    background-color: #13223f;
+    color: #fff;
+    padding: 15px 0;
+}
+footer a:hover{
+    color:#fffff1;
+}
+
+
+@media (min-width: 576px) { 
+
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+   
+}
+
+@media (min-width: 1200px) { 
+
+}
