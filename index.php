@@ -11,9 +11,10 @@
 </head>
 
 <body>
-    <!-- Menu -->
-    <?php include 'include/menu.php'; ?>
-    <!-- fin de menu -->
+    <div class="container-fluid p-0">
+        <!-- Menu -->
+        <?php include 'include/menu.php'; ?>
+        <!-- fin de menu -->
         <section id="hero">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -38,221 +39,314 @@
             </div>
         </section>
         <!-- Buscador -->
-        <section id="buscador">
-            <div class="container-fluid">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">123</span>
-                                </div>
-                                <input type="text" id="codigo_buscar" class="form-control" placeholder="Codigo">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="ciudad_buscar">
-                                    <option selected disabled>Ciudad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="barrio_buscar">
-                                    <option selected disabled>Barrio</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="tipo_inmueble_buscar">
-                                    <option selected disabled>Inmueble</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="tipo_gestion_buscar">
-                                    <option selected disabled>Gestion</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="precio_buscar">
-                                    <option selected disabled>Precio</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-primary">Buscar</button>
-                        </div>
-    
-                </form>
-            </div>
-        </section>
+        <?php include 'include/buscador.php'; ?>
         <!-- Fin buscador -->
         <!-- inicio informacion -->
         <section id="informacion">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h3>Especialistas en comercio</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Nuestros Servicios</h2>
-                        </div>
-                        <div class="col-3">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-2">
-                                        <img src="..." class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Colocación de marcas</h5>
-                                            <p class="card-text">
-                                                Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-2">
-                                        <img src="..." class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Inversión/Desinversión</h5>
-                                            <p class="card-text">
-                                                Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-2">
-                                        <img src="..." class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Administracion inmobiliaria</h5>
-                                            <p class="card-text">
-                                                La mejor relacion es encontrar la satisfacccion de los dos partes PROPIETARIO E INQUILINO, tu cual eres?.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-2">
-                                        <img src="..." class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <div class="card-body">
-                                            <h5 class="card-title">PROYECTOS</h5>
-                                            <p class="card-text">
-                                                Sabemos comercializar, conocemos el mercado tu Poyecto, es nuestro Proyecto.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- fin informacion -->
-        <!-- propiedades destacadas -->
-        <section id="destacadas">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Propiedades destacadas</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Propiedad destacada</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Propiedad destacada</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Propiedad destacada</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- fin de propiedades destacadas -->
-        <!-- publica tu propiedad -->
-        <section id="consigna">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-6">
-                        <h1>¿Quieres que tu propiedad sea listada aquí?</h1>
-                    </div>
-                    <div class="col-6">
-                        <h1>Consigna tu inmueble</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- fin publia tu propiedad -->
-        <!-- aliados -->
-        <section id="aliados">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        Nuestros Aliados
-                    </div>
-                    <div class="col-12">
-                        <!-- colocar  owl carousel -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- fin aliados -->
-        <footer>
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
+                        <h2 class="especialistas">Especialistas en comercio</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4 pt-4">
+                    <div class="col-11">
+                        <h4>Nuestros Servicios</h4>
+                        <hr>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="contenedor-icono d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Colocación de marcas</h5>
+                                                <p class="card-text">
+                                                    Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="contenedor-icono d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">INVERSION/DES INVERSION</h5>
+                                                <p class="card-text">
+                                                    Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="contenedor-icono d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ADMINISTRACION INMOBILIARIA</h5>
+                                                <p class="card-text">
+                                                    La mejor relacion es encontrar la satisfacccion de los dos partes PROPIETARIO E INQUILINO, tu cual eres?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="contenedor-icono d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">PROYECTOS</h5>
+                                                <p class="card-text">
+                                                    Sabemos comercializar, conocemos el mercado tu Poyecto, es nuestro Proyecto.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+    </div>
+    </section>
+    <!-- fin informacion -->
+    <!-- propiedades destacadas -->
+    <section id="destacadas" class="propiedades">
+        <div class="container-fluid p-0 mt-4 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h4>Propiedades destacadas</h4>
+                    <hr>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="row">
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin de propiedades destacadas -->
+    <!-- publica tu propiedad -->
+    <section id="consigna">
+        <div class="container-fluid mt-4 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="row border">
+                        <div class="col-12 d-flex align-items-center">
+                            <h5>¿Quieres que tu propiedad sea listada aquí?</h5>
+                            <a href="" class="btn btn-primary ml-auto">Consigna tu inmueble</a>
+                        </div>
+                        <!-- <div class="col-3 offset-3 pr-0 mr-0">
+                            <a href="" class="btn btn-primary">Consigna tu inmueble</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin publia tu propiedad -->
+    <!-- aliados -->
+    <section id="aliados">
+        <div class="container-fluid p-0 mt-4 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h4>Nuestros Aliados</h4>
+                    <hr>
+                </div>
+                <div class="col-12">
+                   <div class="row justify-content-center">
+                       <div class="col-6 d-flex justify-content-center">
+                            <img src="images/SIMI.png" alt="">
+                       </div>
+                       <div class="col-6 d-flex justify-content-center">
+                            <img src="images/Logo_Lonja.png" alt="">
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin aliados -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
     <!-- Scripts en comun -->
     <?php include 'include/archivosfooter.php'; ?>
 </body>

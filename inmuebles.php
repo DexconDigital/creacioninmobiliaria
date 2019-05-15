@@ -12,115 +12,595 @@
 
 <body>
     <!-- Menu -->
+    <!-- espacio menu -->
+    <div class="espacio-menu"></div>
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
-    <section id="buscador">
-        <div class="container-fluid">
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">123</span>
-                            </div>
-                            <input type="text" id="codigo_buscar" class="form-control" placeholder="Codigo">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="ciudad_buscar">
-                                <option selected disabled>Ciudad</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="barrio_buscar">
-                                <option selected disabled>Barrio</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="tipo_inmueble_buscar">
-                                <option selected disabled>Inmueble</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="tipo_gestion_buscar">
-                                <option selected disabled>Gestion</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="precio_buscar">
-                                <option selected disabled>Precio</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-primary">Buscar</button>
-                    </div>
+    <?php include 'include/buscador.php'; ?>
 
-            </form>
-        </div>
-    </section>
-
-    <!-- Scripts en comun -->
     <!-- inmuebles  -->
-    <section id="inmeubles">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Propiedades destacadas</h1>
+    <section id="destacadas" class="propiedades">
+        <div class="container-fluid p-0 mt-4 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <h4>Lista de Inmuebles</h4>
+                    <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Propiedad destacada</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="row">
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Propiedad destacada</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Propiedad destacada</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Atras</a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
+                            <a class="page-link" href="#">Siguiente</a>
                         </li>
                     </ul>
                 </nav>
