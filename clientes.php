@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quienes Somos</title>
+    <title>Clientes</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
 
@@ -14,7 +14,92 @@
     <!-- Menu -->
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
+    <section id="cliente" class="mt-4 pt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="arrendatarios.php">
+                                <img src="images/no_image.png" class="card-img" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arrendatarios</h5>
+                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <a href="arrendatarios.php" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="propietarios.php">
+                                <img src="images/no_image.png" class="card-img" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Propietarios</h5>
+                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <a href="propietarios.php" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                            <a href="">
+                                <img src="images/no_image.png" class="card-img" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pagos PSE</h5>
+                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <a href="" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="images/no_image.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formularios</h5>
+                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <a href="" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Scripts en comun -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <?php include 'include/archivosfooter.php'; ?>
 </body>
 

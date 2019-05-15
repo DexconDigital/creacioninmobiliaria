@@ -15,7 +15,7 @@
         <!-- Menu -->
         <?php include 'include/menu.php'; ?>
         <!-- fin de menu -->
-        <section id="hero">
+        <section id="hero" class="overflow-hidden">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -61,7 +61,7 @@
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-info-circle"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                         </div>
                                         <div class="col-10">
@@ -80,14 +80,14 @@
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-info-circle"></i>
+                                                <i class="fas fa-comment-dollar"></i>
                                             </div>
                                         </div>
                                         <div class="col-10">
                                             <div class="card-body">
                                                 <h5 class="card-title">INVERSION/DES INVERSION</h5>
                                                 <p class="card-text">
-                                                    Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos. </p>
+                                                    Las necesidades de nuestros clientes son diferentes, ¿cuál es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aquí estamos. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-info-circle"></i>
+                                                <i class="fas fa-user-lock"></i>
                                             </div>
                                         </div>
                                         <div class="col-10">
@@ -117,7 +117,7 @@
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-info-circle"></i>
+                                                <i class="fas fa-project-diagram"></i>
                                             </div>
                                         </div>
                                         <div class="col-10">
@@ -160,7 +160,7 @@
                                     <div class="overlay">
                                         <div class="info">
                                             <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
+                                            <h3>gestión</h3>
                                             <figure>Ubicacion</figure>
                                         </div>
                                         <ul class="additional-info">
@@ -195,7 +195,7 @@
                                     <div class="overlay">
                                         <div class="info">
                                             <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
+                                            <h3>gestión</h3>
                                             <figure>Ubicacion</figure>
                                         </div>
                                         <ul class="additional-info">
@@ -230,7 +230,7 @@
                                     <div class="overlay">
                                         <div class="info">
                                             <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
+                                            <h3>gestión</h3>
                                             <figure>Ubicacion</figure>
                                         </div>
                                         <ul class="additional-info">
@@ -265,7 +265,7 @@
                                     <div class="overlay">
                                         <div class="info">
                                             <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
+                                            <h3>gestión</h3>
                                             <figure>Ubicacion</figure>
                                         </div>
                                         <ul class="additional-info">
@@ -304,7 +304,7 @@
                     <div class="row border">
                         <div class="col-12 d-flex align-items-center">
                             <h5>¿Quieres que tu propiedad sea listada aquí?</h5>
-                            <a href="" class="btn btn-primary ml-auto">Consigna tu inmueble</a>
+                            <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary ml-auto">Consigna tu inmueble</a>
                         </div>
                         <!-- <div class="col-3 offset-3 pr-0 mr-0">
                             <a href="" class="btn btn-primary">Consigna tu inmueble</a>
@@ -324,14 +324,14 @@
                     <hr>
                 </div>
                 <div class="col-12">
-                   <div class="row justify-content-center">
-                       <div class="col-6 d-flex justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-6 d-flex justify-content-center">
                             <img src="images/SIMI.png" alt="">
-                       </div>
-                       <div class="col-6 d-flex justify-content-center">
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
                             <img src="images/Logo_Lonja.png" alt="">
-                       </div>
-                   </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,6 +347,90 @@
         </div>
     </footer>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consignaInmueble" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Consigna tu Inmueble</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Nombre</label>
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Correo</label>
+                                            <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Telefono</label>
+                                            <input type="number" class="form-control" id="" placeholder="Ingrese Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Tipo</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected disabled>Tipo</option>
+                                                <option>Apartamento</option>
+                                                <option>Bodegas</option>
+                                                <option>Casa</option>
+                                                <option>local de calle</option>
+                                                <option value="">Lote</option>
+                                                <option value="">Oficina</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Sector</label>
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Disponibilidad</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected disabled>Disponibilidad</option>
+                                                <option>Arriendo</option>
+                                                <option>Venta</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Area</label>
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Mensaje:</label>
+                                            <textarea class="form-control" id="" placeholder="Deje su mensaje" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Acepto la política de privacidad
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del modal -->
     <!-- Scripts en comun -->
     <?php include 'include/archivosfooter.php'; ?>
 </body>

@@ -10,14 +10,24 @@ a:hover{
 body>.container-fluid{
     overflow: hidden;
 }
+/* boton */
+.btn-primary{
+  background-color: #13223f !important;
+  border: #073855;
+}
 /* espacio menu */
 .espacio-menu{
-    height: 120px;
+    height: 86px;
+    overflow: hidden;
 }
 /* buscador */
+#buscador{
+  overflow: hidden;
+}
 #buscador form{
     padding: 32px 10px 20px;
     background-color: #2991ce;
+    overflow: hidden;
 }
 #buscador select, #buscador input, #buscador button{
     border-radius: 0;
@@ -30,6 +40,9 @@ body>.container-fluid{
     padding: 40px 0;
     background-color: #13223f;
     color: #fff;
+}
+#informacion, #aliados{
+  overflow: hidden;
 }
 #informacion h4{
     color: #010101;
@@ -61,6 +74,9 @@ body>.container-fluid{
 
 figure{
     margin:0 0;
+}
+.propiedades{
+  overflow: hidden;
 }
 .property {
     margin-bottom: 30px;
@@ -234,10 +250,79 @@ figure{
 #consigna .container-fluid .border{
     padding: 25px 10px;
 }
+
+/* Diseños de blog */
+.banner-imagen{
+  background-image: url(../images/slide-02.jpg);
+  width: 100%;
+  /* Establecer un alto para los cuadros */
+  height: 400px;
+  /* Definir color de fondo */
+  background-color: black;
+  /* Que tan grande debe ser la imagen respecto al tamaño del contenedor */
+  background-size: 100%;
+  /* Que no se repita la imagen */
+  background-repeat: no-repeat;
+  /* que su posicion sea central */
+  background-position: center;
+}
+/* section de clientes en arrendatarios y propietarios */
+#iframe{
+  overflow: hidden;
+}
+#iframe iframe{
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+/* blog */
+#lista-noticias .contenedor-image{
+  background-image: url(../images/slide-02.jpg);
+  width: 100%;
+  /* Establecer un alto para los cuadros */
+  height: 200px;
+  /* Definir color de fondo */
+  background-color: black;
+  /* Que tan grande debe ser la imagen respecto al tamaño del contenedor */
+  background-size: 100%;
+  /* Que no se repita la imagen */
+  background-repeat: no-repeat;
+  /* que su posicion sea central */
+  background-position: center;
+}
+
+/* blog-detalle */
+#banner-noticias{
+  overflow: hidden;
+}
+#banner-noticias .fecha-pdf{
+  list-style: none;
+  color: #13223f;
+}
+#banner-noticias h2{
+  color: #13223f;
+}
+.list-group-item:hover{
+  background-color: #13223f;
+  color: #fff;
+}
+
+#contacto{
+  overflow: hidden;
+}
+#contacto ul{
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 3.5rem;
+}
+#contacto ul li{
+  margin-bottom: 0.8rem;
+}
 footer .container-fluid{
     background-color: #13223f;
     color: #fff;
     padding: 15px 0;
+    overflow: hidden;
 }
 footer a:hover{
     color:#fffff1;

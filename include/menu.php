@@ -2,6 +2,9 @@
 <style>
   @media (min-width: 992px) { 
       /* /menu */
+      .bg-light{
+        background-color: #fff !important;
+      }
       .padding-botton-lg-0{
           padding-bottom:  0;
       }
@@ -29,7 +32,7 @@
   }
 </style>
 <!-- fin de estilos iniciales menu -->
-
+<div class="espacio-menu"></div>
 <!-- conetnido emnu -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light padding-botton-lg-0 padding-left-lg-0">
 <div class="container-fluid">

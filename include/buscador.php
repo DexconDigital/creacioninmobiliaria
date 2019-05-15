@@ -7,7 +7,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">123</span>
                                 </div>
-                                <input type="text" id="codigo_buscar" class="form-control" placeholder="Codigo">
+                                <input type="text" id="codigo_buscar" class="form-control" placeholder="Código">
                             </div>
                         </div>
                         <div class="col">
@@ -34,7 +34,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <select class="form-control" id="tipo_gestion_buscar">
-                                    <option selected disabled>Gestion</option>
+                                    <option selected disabled>Gestión</option>
                                 </select>
                             </div>
                         </div>

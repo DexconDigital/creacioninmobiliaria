@@ -12,8 +12,6 @@
 
 <body>
     <!-- Menu -->
-    <!-- espacio menu -->
-    <div class="espacio-menu"></div>
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
     <?php include 'include/buscador.php'; ?>
@@ -607,6 +605,15 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <?php include 'include/archivosfooter.php'; ?>
 </body>
 
