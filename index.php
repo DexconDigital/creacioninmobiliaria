@@ -161,7 +161,7 @@
                                         <div class="info">
                                             <div class="tag price">$123456</div>
                                             <h3>gestión</h3>
-                                            <figure>Ubicacion</figure>
+                                            <figure>ubicación</figure>
                                         </div>
                                         <ul class="additional-info">
                                             <li>
@@ -196,7 +196,7 @@
                                         <div class="info">
                                             <div class="tag price">$123456</div>
                                             <h3>gestión</h3>
-                                            <figure>Ubicacion</figure>
+                                            <figure>ubicación</figure>
                                         </div>
                                         <ul class="additional-info">
                                             <li>
@@ -231,7 +231,7 @@
                                         <div class="info">
                                             <div class="tag price">$123456</div>
                                             <h3>gestión</h3>
-                                            <figure>Ubicacion</figure>
+                                            <figure>ubicación</figure>
                                         </div>
                                         <ul class="additional-info">
                                             <li>
@@ -266,7 +266,7 @@
                                         <div class="info">
                                             <div class="tag price">$123456</div>
                                             <h3>gestión</h3>
-                                            <figure>Ubicacion</figure>
+                                            <figure>ubicación</figure>
                                         </div>
                                         <ul class="additional-info">
                                             <li>
