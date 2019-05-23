@@ -29,7 +29,7 @@
                 <div class="col-11">
                     <div class="row">
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -64,7 +64,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -99,7 +99,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -134,7 +134,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -168,42 +168,7 @@
                                 </a>
                             </div><!-- /.property -->
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
-                                            <figure>Ubicacion</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -238,7 +203,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -273,41 +238,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
-                                            <figure>Ubicacion</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -342,7 +273,41 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -377,7 +342,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -412,41 +377,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>Gestion</h3>
-                                            <figure>Ubicacion</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -481,7 +412,41 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -516,7 +481,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -551,7 +516,42 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="property">
+                                <a href="">
+                                    <div class="property-image">
+                                        <img alt="" src="images/no_image.png">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="info">
+                                            <div class="tag price">$123456</div>
+                                            <h3>Gestion</h3>
+                                            <figure>Ubicacion</figure>
+                                        </div>
+                                        <ul class="additional-info">
+                                            <li>
+                                                <header>Areá:</header>
+                                                <figure>240m<sup>2</sup></figure>
+                                            </li>
+                                            <li>
+                                                <header>Cuartos:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Baños:</header>
+                                                <figure>2</figure>
+                                            </li>
+                                            <li>
+                                                <header>Garaje:</header>
+                                                <figure>0</figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div><!-- /.property -->
+                        </div>
+                        <!-- Bloque Propiedad -->
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -614,7 +614,10 @@
             </div>
         </div>
     </footer>
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+     ?>
 </body>
 
 </html>

@@ -15,7 +15,10 @@
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
     <!-- Scripts en comun -->
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+    ?>
 </body>
 
 </html>

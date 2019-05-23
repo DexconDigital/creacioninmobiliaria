@@ -34,7 +34,7 @@
 <!-- fin de estilos iniciales menu -->
 <div class="espacio-menu"></div>
 <!-- conetnido emnu -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light padding-botton-lg-0 padding-left-lg-0">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light padding-botton-lg-0 padding-left-lg-0 w-100">
 <div class="container-fluid">
 <div class="row w-100">
     <div class="col-12">

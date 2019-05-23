@@ -108,7 +108,10 @@
             </div>
         </div>
     </footer>
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+     ?>
 </body>
 
 </html>

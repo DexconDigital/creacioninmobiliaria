@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-11">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -68,14 +68,14 @@
                                             <div class="card-body">
                                                 <h5 class="card-title">Colocación de marcas</h5>
                                                 <p class="card-text">
-                                                    Las necesidades de nuestros clientes son diferentes, cual es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aqui estamos.
+                                                Acompañamiento en el plan de expansion de su marca, informacion del sector y estudios de interes.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -151,7 +151,7 @@
                 <div class="col-11">
                     <div class="row">
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -186,7 +186,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -221,7 +221,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -256,7 +256,7 @@
                             </div><!-- /.property -->
                         </div>
                         <!-- Bloque Propiedad -->
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <div class="property">
                                 <a href="">
                                     <div class="property-image">
@@ -302,9 +302,11 @@
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="row border">
-                        <div class="col-12 d-flex align-items-center">
-                            <h5>¿Quieres que tu propiedad sea listada aquí?</h5>
-                            <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary ml-auto">Consigna tu inmueble</a>
+                        <div class="col-12 col-lg d-flex align-items-center">
+                            <h5 class="text-center">¿Quieres que tu propiedad sea listada aquí?</h5>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex align-items-center">
+                            <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a>
                         </div>
                         <!-- <div class="col-3 offset-3 pr-0 mr-0">
                             <a href="" class="btn btn-primary">Consigna tu inmueble</a>
@@ -324,12 +326,18 @@
                     <hr>
                 </div>
                 <div class="col-12">
-                    <div class="row justify-content-center">
-                        <div class="col-6 d-flex justify-content-center">
-                            <img src="images/SIMI.png" alt="">
+                    <div class="row justify-content-center aling-items-center">
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center aling-items-center">
+                            <img src="images/SIMI.png" class="img-fluid" alt="">
                         </div>
-                        <div class="col-6 d-flex justify-content-center">
-                            <img src="images/Logo_Lonja.png" alt="">
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center aling-items-center">
+                            <img src="images/Logo_Lonja.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center aling-items-center">
+                            <img src="images/unifianza.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center aling-items-center">
+                            <img src="images/seguros-sura.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -349,8 +357,8 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="consignaInmueble" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade" id="consignaInmueble" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenterTitle">Consigna tu Inmueble</h5>
@@ -401,8 +409,8 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="">Area</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese Telefono">
+                                            <label for="">Areá</label>
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese Areá">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Mensaje:</label>
@@ -412,7 +420,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                                 <label class="form-check-label" for="gridCheck">
-                                                    Acepto la política de privacidad
+                                                    Acepto la <a href="politica_de_datos.pdf" download="Politica de tratamiento de datos">  política de privacidad de datos.</a>
                                                 </label>
                                             </div>
                                         </div>
@@ -424,7 +432,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary">Enviar</button>
                 </div>
             </div>
@@ -432,7 +440,10 @@
     </div>
     <!-- Fin del modal -->
     <!-- Scripts en comun -->
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+    ?>
 </body>
 
 </html>

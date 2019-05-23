@@ -25,7 +25,7 @@
                             <h2>Contáctanos</h2>
                             <hr>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4">
                             <ul>
                                 <li><strong>Dirección</strong></li>
                                 <li>cra. 25#1a sur - 155</li>
@@ -42,7 +42,7 @@
                                 <li> Correo: <a href="malito: info@creacioninmobiliaria.com">info@creacioninmobiliaria.com</a></li>
                             </ul>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-lg-8">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.513824901182!2d-75.56081478573421!3d6.195730828606955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46829a65e973ed%3A0x2331d4869f9064bd!2sCra.+25+%231a-155%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1ses!2sco!4v1557934960570!5m2!1ses!2sco" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
         <div class="container-fluid p-0 pt-4 mt-4">
             <hr>
             <div class="row justify-content-center">
-                <div class="col-7">
+                <div class="col-11 col-md-10 col-lg-7">
                     <form action="">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">¿Cuál es tu solicitud?</label>
@@ -86,7 +86,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
-                                Acepto la política de privacidad 
+                                Acepto la <a href="politica_de_datos.pdf" download="Politica de datos"/>política de privacidad</a> 
                                 </label>
                             </div>
                         </div>
@@ -106,7 +106,10 @@
         </div>
     </footer>
     <!-- Scripts en comun -->
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+     ?>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <a href="arrendatarios.php">
-                                <img src="images/no_image.png" class="card-img" alt="...">
+                                <img src="images/arrendatarios.png" class="card-img" alt="...">
                                 </a>
                             </div>
                             <div class="col-md-8">
@@ -40,7 +40,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <a href="propietarios.php">
-                                <img src="images/no_image.png" class="card-img" alt="...">
+                                <img src="images/propietarios.png" class="card-img" alt="...">
                                 </a>
                             </div>
                             <div class="col-md-8">
@@ -58,7 +58,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-4">
                             <a href="">
-                                <img src="images/no_image.png" class="card-img" alt="...">
+                                <img src="images/Pagos_PSE.png" class="card-img" alt="...">
                                 </a>
                             </div>
                             <div class="col-md-8">
@@ -75,7 +75,7 @@
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="images/no_image.png" class="card-img" alt="...">
+                                <img src="images/Formularios.png" class="card-img" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -100,7 +100,10 @@
             </div>
         </div>
     </footer>
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+     ?>
 </body>
 
 </html>

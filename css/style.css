@@ -1,4 +1,7 @@
 /* Color de logo #13223f; */
+.bg-light{
+  background-color: #fff !important;
+}
 a{
     list-style: none;
     text-decoration: none;

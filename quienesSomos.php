@@ -15,17 +15,17 @@
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
     <!-- quienes somos -->
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="overflow-hidden">
         <div class="container p-0 pt-4 mt-4">
-            <div class="row">
-                <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-11 p-1">
                     <h2>Quienes Somos</h2>
                     <hr>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="col-11 col-lg-12 mb-4">
                     <p>Creación Inmobiliaria con una estructura liviana, contemporánea y eficiente, ofrece soluciones en el mercado inmobiliario comercial, con una experiencia de más de 7 años especializada en la promoción, gerencia y comercialización.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 order-sm-2 order-md-1">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Conceptualización, estructuración y desarrollo de complejos comerciales.</li>
                         <li class="list-group-item">Comercialización de complejos comerciales participando como socios de estos desarrollos o liderando la gerencia comercial de los mismos.</li>
@@ -35,16 +35,16 @@
                         <li class="list-group-item">Administración Inmobiliaria en inmuebles comerciales.</li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 col-6 order-sm-1 order-md-2">
                     <img src="images/no_image.png" alt="" width="100%">
                 </div>
             </div>
             <div class="row pt-4 mt-4">
-                <div class="col-12">
+                <div class="col-11 col-lg-12 m-4">
                     <h2>Misión</h2>
                     <p>Optimizar los recursos físicos y humanos, generando eficiencia y satisfacción al cliente, en la ejecución de los procesos inmobiliarios, con el sello de respeto y excelencia.</p>
                 </div>
-                <div class="col-12 pt-4 mt-4">
+                <div class="col-11 col-lg-12 pt-4 m-4">
                     <h2>Visión</h2>
                     <p>En el 2020 ser la empresa líder en la gestión de proyectos inmobiliarios y comercialización de activos comerciales, especializándonos en las necesidades de nuestros clientes y del mercado.</p>
                 </div>
@@ -62,7 +62,10 @@
         </div>
     </footer>
     <!-- Scripts en comun -->
-    <?php include 'include/archivosfooter.php'; ?>
+    <?php 
+    include 'include/archivosfooter.php';
+    include 'include/boton-subir.php';
+     ?>
 </body>
 
 </html>
