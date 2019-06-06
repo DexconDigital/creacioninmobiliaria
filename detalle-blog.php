@@ -22,14 +22,14 @@
                     <!-- Aqui va el banner -->
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2 offset-1 pt-4 mt-4 border-right">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-2 pt-4 mt-4 border-right">
                     <ul class="fecha-pdf">
                         <li><i class="far fa-calendar-alt mr-2"></i>Fecha</li>
                         <li><i class="far fa-file-pdf mr-2"></i>Descargar archivo</li>
                     </ul>
                 </div>
-                <div class="col-8 pt-4 mt-4">
+                <div class="col-10 col-lg-8 pt-4 mt-4">
                     <h2>Titulo de la noticia</h2>
                     <hr>
                     <p>

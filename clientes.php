@@ -17,7 +17,7 @@
     <section id="cliente" class="mt-4 pt-4">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-7">
+                <div class="col-11 col-lg-7">
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-11 col-lg-7">
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-11 col-lg-7">
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-11 col-lg-7">
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-4">

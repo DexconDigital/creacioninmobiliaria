@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    // Validar codigo
+    // si el campo codigo tiene un valor los demas  campos se desabilitan
     $('#codigo_buscar').keyup(function () {
         var value = $(this).val();
         if(value.length>0){
             $('#ciudad_buscar').attr("disabled", true);
             $('#barrio_buscar').attr("disabled", true);
             $('#tipo_inmueble_buscar').attr("disabled", true);
-            $('#tipo_operacion_buscar').attr("disabled", true);
+            $('#tipo_gestion_buscar').attr("disabled", true);
             $('#precio_minimo_buscar').attr("disabled", true);
             $('#precio_maximo_buscar').attr("disabled", true);
         }else{
@@ -19,9 +19,9 @@ $(document).ready(function () {
         }
     });
 
-    // Cargar departamento
+    // Funcion para cargar departamentos, ciudades y barrios
     $.ajax({
-        url: 'http://www.simi-api.com/ApiSimiweb/response/v2/departamento',
+        url: 'https://www.simi-api.com/ApiSimiweb/response/v2/departamento',
         type: 'GET',
         beforeSend: function (xhr) {
             xhr.setRequestHeader(
@@ -29,10 +29,11 @@ $(document).ready(function () {
                 'Basic ' + btoa('Authorization:' + TOKEN));
         },
         'dataType': "json",
-        success: function (data) {
-            for (var i = 0; i < data.length; i++) {
+         success: function (depto) {
+            for (var i = 0; i < depto.length; i++) {
+                // Funcion para traer ciudades
                 $.ajax({
-                    url: 'http://www.simi-api.com/ApiSimiweb/response/v2/ciudad/idDepartamento/' + data[i].id,
+                    url: 'https://www.simi-api.com/ApiSimiweb/response/v2/ciudad/idDepartamento/' + depto[i].id,
                     type: 'GET',
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader(
@@ -45,13 +46,14 @@ $(document).ready(function () {
                         for (var i = 0; i < ciudad.length; i++) {
                             ciudades_resultados +=
                                 '<option value="' + ciudad[i].id + '">' +
-                                ciudad[i].nombre +
+                                    ciudad[i].nombre +
                                 '</option>';
                         }
                         $('#ciudad_buscar').append(ciudades_resultados);
-                        // Traer Barrios
+                        // Funcion para traer barrios
                         $("#ciudad_buscar").change(function () {
                             var ciudad_id = $("#ciudad_buscar option:selected").val();
+                            // Limpia el selected de los barrios cada vez que se cambia de ciudad
                             $('#barrio_buscar').empty();
                                 $.ajax({
                                     url: 'http://www.simi-api.com/ApiSimiweb/response/v2/barrios/idCiudad/' + ciudad_id,
@@ -64,6 +66,8 @@ $(document).ready(function () {
                                     'dataType': "json",
                                     success: function (barrios) {
                                         var barrios_resultados = " ";
+                                        barrios_resultados +=
+                                                '<option value="0">Barrio</option>';
                                         for (var i = 0; i < barrios.length; i++) {
                                             barrios_resultados +=
                                                 '<option value="' + barrios[i].id + '">' +
@@ -81,8 +85,9 @@ $(document).ready(function () {
         }
     });
 
+    // Funcion para traer tipo de gestion ejm: "arriendo, venta etc."
     $.ajax({
-        url: 'http://www.simi-api.com/ApiSimiweb/response/gestion',
+        url: 'https://www.simi-api.com/ApiSimiweb/response/gestion',
            type: 'GET',
            beforeSend: function (xhr) {
            xhr.setRequestHeader(
@@ -92,19 +97,18 @@ $(document).ready(function () {
            'dataType': "json",
            success:function(gestion)
            {
-               console.log(gestion);
             var gestion_resultados = " ";
             for (var i = 0; i < gestion.length; i++) {
                 gestion_resultados +=
-                    '<option value="' + gestion[i].id + '">' +
+                '<option value="' + gestion[i].idGestion + '">' +
                     gestion[i].Nombre +
                     '</option>';
             }
-            $('#tipo_inmueble_buscar').append(gestion_resultados);
-           }
-                       
+            $('#tipo_gestion_buscar').append(gestion_resultados);
+           }             
        });
 
+    // Funcion que trae el tipo de inmueble ejm: apartamento casa etc
     $.ajax({
         url: 'http://www.simi-api.com/ApiSimiweb/response/v2/tipoInmuebles/unique/1',
            type: 'GET',
@@ -120,19 +124,20 @@ $(document).ready(function () {
               var operacion_resultados = " ";
               for (var i = 0; i < operacion.length; i++) {
                   operacion_resultados +=
-                      '<option value="' + operacion[i].id + '">' +
+                    '<option value="' + operacion[i].idTipoInm + '">' +
                       operacion[i].Nombre +
                       '</option>';
               }
-              $('#tipo_operacion_buscar').append(operacion_resultados);
+              $('#tipo_inmueble_buscar').append(operacion_resultados);
              }
                        
        });
 
-    // Buscar por medio del boton
+    // Buscar por medio del boton creado en el buscador
     $('#buscar').click(function () {
         busqueda();
     });
+
     // buscar por medio de la tecla enter
     $('body').keyup(function(e) {
         if(e.keyCode == 13) {
@@ -141,28 +146,43 @@ $(document).ready(function () {
     });
 });
 
-var code, ciudad_buscar, barrio_buscar, gestion_buscar, operacion_buscar, maximo_buscar, minimo_buscar;
+// Definir las variables que se van a usar para almacenar los datos que se traen del buscador
+var code, ciudad_buscar, barrio_buscar, gestion_buscar, tipo_inmueble_buscar, alcobas_buscar, banos_buscar, maximo_buscar, minimo_buscar;
+// Esta funcion trae los campos digitados en el buscador
 var busqueda = function(){
     code = $("#codigo_buscar").val();
     ciudad_buscar = $('#ciudad_buscar option:selected').val();
     barrio_buscar = $('#barrio_buscar option:selected').val();
-    operacion_buscar = $('#tipo_operacion_buscar option:selected').val();
-    gestion_buscar = $('#tipo_gestion_buscar').val();
-    maximo_buscar = $('#maximo_buscar').val();
-    minimo_buscar = $('minimo_buscar').val();
+    gestion_buscar = $('#tipo_gestion_buscar option:selected').val();
+    tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
+    alcobas_buscar= $('#alcobas_buscar').val();
+    banos_buscar= $('#banos_buscar').val();
+    maximo_buscar = $('#precio_minimo_buscar').val();
+    minimo_buscar = $('#precio_maximo_buscar').val();
+
+    // Si no trae nada del buscador definirla en cero
+    ciudad_buscar = existeCampo(ciudad_buscar);
+    barrio_buscar = existeCampo(barrio_buscar);
+    gestion_buscar = existeCampo(gestion_buscar);
+    tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
+    alcobas_buscar = existeCampo(alcobas_buscar);
+    banos_buscar = existeCampo(banos_buscar);
+    maximo_buscar = existeCampo(minimo_buscar);
+    minimo_buscar = existeCampo(maximo_buscar);
 
 
-    existeCampo(ciudad_buscar);
-    console.log(ciudad_buscar);
     if (code !== "") {
-        window.location.href = 'detalle-inmueble.php?dt=933-' + code + '';
+        window.location.href = 'detalle-inmueble.php?co=933-' + code + '';
     }else{
-
+        window.location.href = 'inmuebles.php?ci='+ciudad_buscar+
+        '&&bar='+barrio_buscar+
+        '&&ge='+gestion_buscar+
+        '&&in='+tipo_inmueble_buscar+
+        '&&al='+alcobas_buscar+
+        '&&ban='+banos_buscar+
+        '&&min='+minimo_buscar+
+        '&&max='+maximo_buscar+
+        '';
     }
 }
 
-var existeCampo = function(campo){
-    if(campo == null){
-        campo = 0;
-    }
-}

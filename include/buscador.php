@@ -13,40 +13,40 @@
                         <div class="col-12 col-md-6 col-lg">
                             <div class="form-group">
                                 <select class="form-control" id="ciudad_buscar">
-                                    <option selected disabled>Ciudad</option>
+                                    <option value="0" selected disabled>Ciudad</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg">
                             <div class="form-group">
                                 <select class="form-control" id="barrio_buscar">
-                                    <option selected disabled>Barrio</option>
+                                    <option selected value="0" disabled>Barrio</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg">
                             <div class="form-group">
                                 <select class="form-control" id="tipo_inmueble_buscar">
-                                    <option selected disabled>Inmueble</option>
+                                    <option selected value="0" disabled>Inmueble</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg">
                             <div class="form-group">
                                 <select class="form-control" id="tipo_gestion_buscar">
-                                    <option selected disabled>Gestión</option>
+                                    <option selected value="0" disabled>Gestión</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg">
                             <div class="form-group">
                                 <select class="form-control" id="precio_buscar">
-                                    <option selected disabled>Precio</option>
+                                    <option selected value="0" disabled>Precio</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg">
-                            <button class="btn btn-primary btn-md btn-block">Buscar</button>
+                            <button type="button" id="buscar" class="btn btn-primary btn-md btn-block">Buscar</button>
                         </div>
     
                 </form>

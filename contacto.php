@@ -9,6 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
     <?php include 'include/archivosheader.php'; ?>
+    <style>
+    body{
+        overflow-x:hidden;
+    }
+    </style>
 </head>
 
 <body>

@@ -1,3 +1,13 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Color de logo #13223f; */
 .bg-light{
   background-color: #fff !important;
@@ -52,7 +62,7 @@ body>.container-fluid{
 }
 #informacion .contenedor-icono{
     width: 100%;
-    height: 25%;
+    height: 50px;
     background-color: #13223f;
 }
 #informacion i{
@@ -177,7 +187,7 @@ figure{
     padding: 12px;
   }
   .property .property-image {
-    /*height: 195px;*/
+    height: 180px;
     overflow: hidden;
     width: 100%;
   }
@@ -248,7 +258,35 @@ figure{
 }
   
 /* fin d epropeidades  */
-
+/* Detalle inmueble **********************************************************************/
+.titulo h2{
+  font-weight: lighter;
+}
+.titulo h4{
+  color: #5a5a5a;
+  font-weight: normal;
+}
+.list-style-none{
+  list-style: none;
+}
+.table td, .table th {
+  padding: 0.30rem;
+  color: #0000008f;
+}
+.item-titulo{
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #5a5a5a;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #d1d1d1; 
+}
+.list-caracteristicas{
+  list-style: none;
+}
+.list-caracteristicas li::before {content: "•"; color: #13223f;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+/* fin de detalle inmueble****************************************************************** */
 /* consigna inmueble */
 #consigna .container-fluid .border{
     padding: 25px 10px;

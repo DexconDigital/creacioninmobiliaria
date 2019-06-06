@@ -9,7 +9,6 @@
     <title>Creacion Inmobiliaria</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
-
 <body>
     <div class="container-fluid p-0">
         <!-- Menu -->
@@ -135,8 +134,8 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
+            </div>
+        </section>
     <!-- fin informacion -->
     <!-- propiedades destacadas -->
     <section id="destacadas" class="propiedades">
@@ -149,147 +148,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-11">
-                    <div class="row">
-                        <!-- Bloque Propiedad -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>gestión</h3>
-                                            <figure>ubicación</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <!-- Bloque Propiedad -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>gestión</h3>
-                                            <figure>ubicación</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <!-- Bloque Propiedad -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>gestión</h3>
-                                            <figure>ubicación</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
-                        <!-- Bloque Propiedad -->
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="property">
-                                <a href="">
-                                    <div class="property-image">
-                                        <img alt="" src="images/no_image.png">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="info">
-                                            <div class="tag price">$123456</div>
-                                            <h3>gestión</h3>
-                                            <figure>ubicación</figure>
-                                        </div>
-                                        <ul class="additional-info">
-                                            <li>
-                                                <header>Areá:</header>
-                                                <figure>240m<sup>2</sup></figure>
-                                            </li>
-                                            <li>
-                                                <header>Cuartos:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Baños:</header>
-                                                <figure>2</figure>
-                                            </li>
-                                            <li>
-                                                <header>Garaje:</header>
-                                                <figure>0</figure>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div><!-- /.property -->
-                        </div>
+                    <div class="row" id="propiedades_destacadas">
+
                     </div>
                 </div>
             </div>
@@ -371,7 +231,6 @@
                         <div class="row">
                             <div class="col-12">
                                 <form action="">
-                                    <form action="">
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Nombre</label>
                                             <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
@@ -383,6 +242,10 @@
                                         <div class="form-group">
                                             <label for="">Telefono</label>
                                             <input type="number" class="form-control" id="" placeholder="Ingrese Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Dirección</label>
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese su Dirección">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Tipo</label>
@@ -398,7 +261,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="">Sector</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese Telefono">
+                                            <input type="text" class="form-control" id="" placeholder="Ingrese Sector">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Disponibilidad</label>
@@ -424,17 +287,20 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary">Enviar</button>
-                                    </form>
-                                </form>
+                                        <div class="form-group">
+                                                <label class="" for="">
+                                                    <strong> Nos reservamos el derecho de consignar el inmueble, de acuerdo a su ubicación y estado. </strong>
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                        </form>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
 var ramdon = Math.floor((Math.random() * 10) + 1);
 
 $.ajax({
-    url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/3/limit/'+ramdon,
+      url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/3/limit/0',
        type: 'GET',
        beforeSend: function (xhr) {
        xhr.setRequestHeader(
@@ -14,8 +14,15 @@ $.ajax({
           'Basic ' + btoa('Authorization:'+TOKEN));
        },
        'dataType': "json",
-       success:function(response)
-       {
-          console.log(response);
+       success:function(destacados){
+         var inmuebles = destacados.Inmuebles;
+         console.log(destacados);
+         if(destacados == "Sin resultados"){
+               contenedor_inmueble += '<h1 class="text-center pb-4 mb-4" >No hay Inmuebles destacados </h1>';
+                $("#propiedades_destacadas").append(contenedor_inmueble);
+         }else{
+            modelo_inmueble_destacados(inmuebles);
+            $("#propiedades_destacadas").append(contenedor_inmueble);
+         }
        }              
    });
