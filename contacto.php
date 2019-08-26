@@ -41,10 +41,10 @@
                                 <li>Lunes a Viernes 7:30am a 6:00pm</li>
                             </ul>
                             <ul>
-                                <li> Fijo: <a href="tel:+5743537590"></a>(+574)353 7590 </li>
-                                <li> WhatsApp: <a href="http://wa.me/573137968073">3137968073</a></li>
-                                <li> Celular: <a href="tel:+573113318139">3113318139</a></li>
-                                <li> Correo: <a href="malito: info@creacioninmobiliaria.com">info@creacioninmobiliaria.com</a></li>
+                                <li> <strong> Fijo: </strong><a href="tel:+5743537590">(+574)353 7590 </a></li>
+                                <li> <strong>WhatsApp: </strong><a href="http://wa.me/573137968073">3137968073</a></li>
+                                <li> <strong>Celular: </strong><a href="tel:+573113318139">3113318139</a></li>
+                                <li> <strong>Correo: </strong><a href="malito: info@creacioninmobiliaria.com">info@creacioninmobiliaria.com</a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-lg-8">
@@ -80,7 +80,7 @@
                             <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
                         </div>
                         <div class="form-group">
-                            <label for="">teléfono</label>
+                            <label for="">Teléfono</label>
                             <input type="number" class="form-control" id="" placeholder="Ingrese teléfono">
                         </div>
                         <div class="form-group">
@@ -101,10 +101,10 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container-fluid pt-4 mt-4">
+    <div class="espacio-footer"></div><footer>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>

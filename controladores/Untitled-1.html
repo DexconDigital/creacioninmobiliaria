@@ -1,0 +1,219 @@
+<div class="col-12 col-md-6 col-lg-3">
+    <div class="property">
+        <a href="">
+            <div class="property-image"><img alt="" src=""></div>
+            <div class="overlay">
+                <div class="info">';
+                    <div class="tag price">Precio</div>
+                    <h3>gestion</h3>
+                    <h3>codigo</h3>
+                    <figure>precio</figure>
+                </div>
+                <ul class="additional-info">
+                    <li>
+                        <header>Areá:</header>
+                        <figure>0<sup>2</sup></figure>
+                    </li>
+                    <li>
+                        <header>Cuartos:</header>
+                        <figure></figure>
+                    </li>
+                    <li>
+                        <header>Baños:</header>
+                        <figure></figure>
+                    </li>
+                    <li>
+                        <header>Garaje:</header>
+                        <figure></figure>
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+.property{
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.property a{
+    transition: 0.2s;
+    color: #1396e2;
+    outline: none !important;
+}
+/* propiedades */
+
+figure{
+    margin:0 0;
+}
+.property {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .property:hover img, .property:active img, .property:focus img {
+    -moz-backface-visibility: hidden;
+    top: -10px;
+    transform: scale(1.2);
+  }
+  .property:hover.big .overlay, .property:active.big .overlay, .property:focus.big .overlay {
+    bottom: 0px;
+  }
+  .property:hover .overlay, .property:active .overlay, .property:focus .overlay {
+    bottom: 0px;
+  }
+  .property:hover .overlay .additional-info li, .property:active .overlay .additional-info li, .property:focus .overlay .additional-info li {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  .property:hover .tag.status, .property:active .tag.status, .property:focus .tag.status {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .property:hover .type, .property:active .type, .property:focus .type {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  .property img {
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -moz-backface-visibility: hidden;
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .property .overlay {
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    bottom: -50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .property .overlay h3 {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 3px 0;
+  }
+  .property .overlay figure {
+    color: #fff;
+    font-weight: lighter;
+  }
+  .property .overlay .additional-info {
+    background-color: #073855;
+    display: table;
+    height: 30px;
+    list-style: none;
+    margin-bottom: 0;
+    width: 101%;
+    padding: 8px 12px;
+  }
+  .property .overlay .additional-info li {
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    color: #fff;
+    display: table-cell;
+    width: 25%;
+  }
+  .property .overlay .additional-info li header {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    font-size: 11px;
+  }
+  .property .overlay .additional-info li figure {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .property .overlay .info {
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.75)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    padding: 12px;
+  }
+  .property .property-image {
+    height: 180px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .property .tag.status {
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    left: 13px;
+    font-size: 12px;
+    padding: 6px 9px;
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+  }
+  .property .tag.status:after {
+    bottom: -4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 4px 0 0;
+    border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+    content: "";
+    left: 0;
+    position: absolute;
+  }
+  .property .type {
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+    background-color: #fff;
+    position: absolute;
+    right: 13px;
+    z-index: 2;
+    top: 15px;
+    height: 29px;
+    padding: 0 2px;
+    text-align: center;
+    line-height: 29px;
+  }
+  .property .type img {
+    width: inherit;
+    top: 0 !important;
+  }
+  .tag.price {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #1396e2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+</style>

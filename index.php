@@ -1,4 +1,6 @@
-<?php $page = 'inicio'; ?>
+<?php $page = 'inicio';
+require_once('controladores/indexController.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -45,7 +47,7 @@
             <div class="container-fluid p-0">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="especialistas">Especialistas en comercio</h2>
+                        <h2 class="especialistas">Especialistas en Comercio</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center mt-4 pt-4">
@@ -148,8 +150,15 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-11">
-                    <div class="row" id="propiedades_destacadas">
-
+                    <div class="row justify-content-center" id="">
+                        <?php if($r == 'Sin resultados'){
+                            echo '<h2 class="text-center">
+                                No Tiene Inmuebles Destacados
+                            </h2>';
+                        }else{
+                            modelo_inmueble($r);
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -205,10 +214,10 @@
         </div>
     </section>
     <!-- fin aliados -->
-    <footer>
+    <div class="espacio-footer"></div><footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>

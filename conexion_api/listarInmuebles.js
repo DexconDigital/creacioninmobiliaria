@@ -1,52 +1,23 @@
 // El paginador recibe parametros por, convertir esos parametros de php a la variable pagina.
-function paginador(actual) {
+if(pagina == 1){
+    $('#atras').addClass('disabled');
+}else if(pagina == numeroPaginas){
+    $('#siguiente').addClass('disabled');
+}
 
+var numeroPaginas = cantidadPaginas(totalpagina, totalInmuebles);
+var contenido_paginas= 'Pagina '+pagina+' de '+numeroPaginas+'';
+$('#pagina_numero').append(contenido_paginas);
+
+function paginador(actual) {
+    var reemplazar = 'pag='+pagina;
+    url = url.replace(reemplazar, "");
     if (actual == 'ant') {
         pagina--;
-        location.href = 'inmuebles.php?pag='+pagina+'#inm';
+        location.href = url;
     }
     if (actual == 'sig') {
         pagina++;
-        location.href = 'inmuebles.php?pag='+pagina+'#inm';
+        location.href = url+'pag='+pagina;
     }
-    return pagina;
 }
-
-if(pagina == 0 || pagina == null || pagina == undefined || pagina ==""){
-    pagina = 1;
-}
-
-$.ajax({
-    url: 'https://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/'+pagina+'/total/12/departamento/0/ciudad/'+ciudad+'/zona/0/barrio/'+barrio+'/tipoInm/'+tipo_inmueble+'/tipOper/'+gestion+'/areamin/0/areamax/0/valmin/'+min+'/valmax/'+max+'/campo/0/order/0/banios/'+banos+'/alcobas/'+alcobas+'/garajes/0/sede/0/usuario/0',
-    type: 'GET',
-    beforeSend: function (xhr) {
-    xhr.setRequestHeader(
-        'Authorization',
-        'Basic ' + btoa('Authorization:'+TOKEN));
-    },
-    'dataType': "json",
-    success:function(data)
-    {   if(data != "Sin resultados"){
-        var inmuebles = data.Inmuebles;
-        var paginas = data.datosGrales;
-        console.log(inmuebles);
-        modelo_inmueble(inmuebles);
-        validarpagina(pagina, cantidadPaginas(paginas.totalPagina, paginas.totalInmuebles));
-        // fin paginador
-        $("#inm").append(contenedor_inmueble);
-    }else{
-        contenedor_inmueble +=
-            '<div class="row justify-content-center">'+
-            '<div class="col-12">'+
-            '<h1 class="text-center">No se encuentran inmuebles con tu busqueda.</h1>'+
-            '</div>'+
-            '<div class="col-12 col-md-4">'+
-            '<a href="#hero" class="btn btn-primary btn-lg btn-block">Volver a Buscar</a>'+
-            '</div>'+
-            '</div>';
-            $("#inm").append(contenedor_inmueble);
-            $(".previus").css("display","none");
-            $(".next").css("display","none");
-    }
-    }     
-   });

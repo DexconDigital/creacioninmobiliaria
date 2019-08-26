@@ -9,13 +9,17 @@ $(document).ready(function () {
             $('#tipo_gestion_buscar').attr("disabled", true);
             $('#precio_minimo_buscar').attr("disabled", true);
             $('#precio_maximo_buscar').attr("disabled", true);
+            $('#area_minima_buscar').attr("disabled", true);
+            $('#area_maxima_buscar').attr("disabled", true);
         }else{
             $('#ciudad_buscar').removeAttr("disabled");
             $('#barrio_buscar').removeAttr("disabled");
             $('#tipo_inmueble_buscar').removeAttr("disabled");
-            $('#tipo_operacion_buscar').removeAttr("disabled");
+            $('#tipo_gestion_buscar').removeAttr("disabled");
             $('#precio_minimo_buscar').removeAttr("disabled");
             $('#precio_maximo_buscar').removeAttr("disabled");
+            $('#area_minima_buscar').removeAttr("disabled");
+            $('#area_maxima_buscar').removeAttr("disabled");
         }
     });
 
@@ -147,7 +151,17 @@ $(document).ready(function () {
 });
 
 // Definir las variables que se van a usar para almacenar los datos que se traen del buscador
-var code, ciudad_buscar, barrio_buscar, gestion_buscar, tipo_inmueble_buscar, alcobas_buscar, banos_buscar, maximo_buscar, minimo_buscar;
+var code, 
+    ciudad_buscar, 
+    barrio_buscar, 
+    gestion_buscar, 
+    tipo_inmueble_buscar, 
+    alcobas_buscar, 
+    banos_buscar, 
+    precio_maximo_buscar, 
+    precio_minimo_buscar,
+    area_minima_buscar,
+    area_maxima_buscar;
 // Esta funcion trae los campos digitados en el buscador
 var busqueda = function(){
     code = $("#codigo_buscar").val();
@@ -157,8 +171,11 @@ var busqueda = function(){
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
     alcobas_buscar= $('#alcobas_buscar').val();
     banos_buscar= $('#banos_buscar').val();
-    maximo_buscar = $('#precio_minimo_buscar').val();
-    minimo_buscar = $('#precio_maximo_buscar').val();
+    precio_minimo_buscar = $('#precio_minimo_buscar').val();
+    precio_maximo_buscar = $('#precio_maximo_buscar').val();
+    area_minima_buscar = $('#area_minima_buscar').val();
+    area_maxima_buscar = $('#area_maxima_buscar').val();
+    
 
     // Si no trae nada del buscador definirla en cero
     ciudad_buscar = existeCampo(ciudad_buscar);
@@ -167,9 +184,10 @@ var busqueda = function(){
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banos_buscar = existeCampo(banos_buscar);
-    maximo_buscar = existeCampo(minimo_buscar);
-    minimo_buscar = existeCampo(maximo_buscar);
-
+    precio_minimo_buscar = existeCampo(minimo_buscar);
+    precio_maximo_buscar = existeCampo(maximo_buscar);
+    area_minima_buscar = existeCampo(area_minima_buscar);
+    area_maxima_buscar = existeCampo(area_maxima_buscar);
 
     if (code !== "") {
         window.location.href = 'detalle-inmueble.php?co=933-' + code + '';
@@ -180,8 +198,10 @@ var busqueda = function(){
         '&&in='+tipo_inmueble_buscar+
         '&&al='+alcobas_buscar+
         '&&ban='+banos_buscar+
-        '&&min='+minimo_buscar+
-        '&&max='+maximo_buscar+
+        '&&premin='+precio_minimo_buscar+
+        '&&premax='+precio_maximo_buscar+
+        '&&armin='+area_minima_buscar+
+        '&&armax='+area_maxima_buscar+
         '';
     }
 }

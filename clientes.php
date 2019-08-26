@@ -91,10 +91,10 @@
         </div>
     </section>
     <!-- Scripts en comun -->
-    <footer>
+    <div class="espacio-footer"></div><footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>

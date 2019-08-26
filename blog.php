@@ -1,4 +1,6 @@
-<?php $page = 'blog'; ?>
+<?php $page = 'blog';
+require_once('controladores/noticiasController.php');
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,77 +23,14 @@
                 <div class="col-11">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Lista de Noticias</h2>
+                            <h2>Proyectos</h2>
                             <hr>
                         </div>
-                        <div class="col-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5 contenedor-image">
-                                        
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Titulo de la Noticia</h5>
-                                            <p class="card-text">Descripcion Corta de la noticia</p>
-                                            <p class="card-text"><small class="text-muted">Fecha</small></p>
-                                            <a href="detalle-blog.php" class="btn btn-primary float-right">Ver Noticia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5 contenedor-image">
-                                        
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Titulo de la Noticia</h5>
-                                            <p class="card-text">Descripcion Corta de la noticia</p>
-                                            <p class="card-text"><small class="text-muted">Fecha</small></p>
-                                            <a href="detalle-blog.php" class="btn btn-primary float-right">Ver Noticia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5 contenedor-image">
-                                        
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Titulo de la Noticia</h5>
-                                            <p class="card-text">Descripcion Corta de la noticia</p>
-                                            <p class="card-text"><small class="text-muted">Fecha</small></p>
-                                            <a href="detalle-blog.php" class="btn btn-primary float-right">Ver Noticia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card mb-3">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5 contenedor-image">
-                                        
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Titulo de la Noticia</h5>
-                                            <p class="card-text">Descripcion Corta de la noticia</p>
-                                            <p class="card-text"><small class="text-muted">Fecha</small></p>
-                                            <a href="detalle-blog.php" class="btn btn-primary float-right">Ver Noticia</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php 
+                            if(is_array($noticias_array)){
+                                modelo_noticia($noticias_array);
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -99,10 +38,10 @@
     </section>
     <!-- fin contenido -->
     <!-- Scripts en comun -->
-    <footer>
+    <div class="espacio-footer"></div><footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>

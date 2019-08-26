@@ -6,7 +6,7 @@
 var ramdon = Math.floor((Math.random() * 10) + 1);
 
 $.ajax({
-      url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/3/limit/0',
+      url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/6/limit/0',
        type: 'GET',
        beforeSend: function (xhr) {
        xhr.setRequestHeader(

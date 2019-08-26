@@ -16,14 +16,19 @@
     <!-- fin de menu -->
     <!-- quienes somos -->
     <section id="quienes-somos" class="overflow-hidden">
-        <div class="container p-0 pt-4 mt-4">
+        <div class="container pt-4 mt-4">
             <div class="row justify-content-center">
-                <div class="col-11 p-1">
+                <div class="col-12">
                     <h2>Quienes Somos</h2>
                     <hr>
                 </div>
-                <div class="col-11 col-lg-12 mb-4">
-                    <p>Creación Inmobiliaria con una estructura liviana, contemporánea y eficiente, ofrece soluciones en el mercado inmobiliario comercial, con una experiencia de más de 7 años especializada en la promoción, gerencia y comercialización.</p>
+                <div class="col-12 col-lg-12 mb-4">
+                    <p>
+                        Creación Inmobiliaria es una empresa que tiene como propósito, atender las necesidades del sector inmobiliario comercial, cuyo su principal insumo es la actividad  Retail. Conocemos y estudiamos el sector, lo que nos permite ser especialistas en todas las transacciones de tipo inmobiliario, asociado al sector de centros comerciales, malls de conveniencia, y espacios comerciales independientes.
+                    </p>
+                    <p>
+                        Siempre atentos a la evolución del mercado, para adaptarnos y lograr los mejores resultados para nuestros clientes.
+                    </p>
                 </div>
                 <div class="col-12 col-lg-6 order-sm-2 order-md-1">
                     <ul class="list-group list-group-flush">
@@ -40,11 +45,11 @@
                 </div>
             </div>
             <div class="row pt-4 mt-4">
-                <div class="col-11 col-lg-12 m-4">
+                <div class="col-12 col-lg-12 mt-4">
                     <h2>Misión</h2>
                     <p>Optimizar los recursos físicos y humanos, generando eficiencia y satisfacción al cliente, en la ejecución de los procesos inmobiliarios, con el sello de respeto y excelencia.</p>
                 </div>
-                <div class="col-11 col-lg-12 pt-4 m-4">
+                <div class="col-12 col-lg-12 pt-4 mt-4">
                     <h2>Visión</h2>
                     <p>En el 2020 ser la empresa líder en la gestión de proyectos inmobiliarios y comercialización de activos comerciales, especializándonos en las necesidades de nuestros clientes y del mercado.</p>
                 </div>
@@ -52,10 +57,10 @@
         </div>
     </section>
     <!-- queines somos -->
-    <footer>
-        <div class="container-fluid pt-4 mt-4">
+    <div class="espacio-footer"></div><footer>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>

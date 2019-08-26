@@ -1,31 +1,5 @@
 <?php $page = 'inmuebles';
-    if (isset($_GET["pag"])) {
-        $pagina = $_GET["pag"];
-    } else {
-        $pagina = 1;
-    }
-    $ciudad = 0;
-    $barrio = 0;
-    $gestion = 0;
-    $tipo_inmueble = 0;
-    $alcobas = 0;
-    $banos = 0;
-    $min = 0;
-    $max = 0;
-
-    if (
-        isset($_GET["ci"]) || isset($_GET["bar"]) || isset($_GET["ge"]) || isset($_GET["in"])
-        || isset($_GET["al"]) || isset($_GET["ban"]) || isset($_GET["min"]) || isset($_GET["max"])
-    ) {
-        $ciudad = $_GET["ci"];
-        $barrio = $_GET["bar"];
-        $gestion = $_GET["ge"];
-        $tipo_inmueble = $_GET["in"];
-        $alcobas = $_GET["al"];
-        $banos = $_GET["ban"];
-        $min = $_GET["min"];
-        $max = $_GET["max"];
-    }
+require_once('controladores/inmueblesController.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,26 +11,19 @@
     <title>Inmuebles</title>
     <?php include 'include/archivosheader.php'; ?>
     <style>
-        @media (min-width: 576px) {
+        @media (min-width: 576px) {}
 
-        }
 
-        
-        @media (min-width: 768px) {
+        @media (min-width: 768px) {}
 
-         }
 
-        
-        @media (min-width: 992px) { 
+        @media (min-width: 992px) {}
 
-        }
 
-        
-        @media (min-width: 1200px) { 
-
-        }
+        @media (min-width: 1200px) {}
     </style>
 </head>
+
 <body>
     <!-- Menu -->
     <?php include 'include/menu.php'; ?>
@@ -73,13 +40,23 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-11">
-                    <div class="row" id="inm">
-                        <!-- Bloque Propiedad -->
+                    <div class="row" id="">
+                        <?php if ($r == 'Sin resultados') {
+                            echo '<h2 class="text-center">
+                                No Tiene Inmuebles Destacados
+                            </h2>';
+                        } else {
+                            modelo_inmueble($r);
+                        }
+                        ?>
 
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="text-center"><small id="pagina_numero"></small></p>
+            </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
                         <li class="page-item previus">
@@ -93,25 +70,21 @@
             </div>
         </div>
     </section>
+    <div class="espacio-footer"></div>
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-10 col-sm-12 text-center">
                     <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>
         </div>
     </footer>
+    <?php echo '<script>var url = "'.$url_pagina.'"; </script>';?>                     
+    <?php echo '<script>var pagina = '.$pag.'; </script>';?>
+    <?php echo '<script>var totalpagina = '.$r['datosGrales']['totalPagina'].'; </script>';?>
+    <?php echo '<script>var totalInmuebles = '.$r['datosGrales']['totalInmuebles'].'; </script>';?>
     <?php
-        echo '<script>var pagina = ' . $pagina . '</script>';
-        echo '<script>var ciudad = ' . $ciudad . '</script>';
-        echo '<script>var barrio = ' . $barrio . '</script>';
-        echo '<script>var gestion = ' . $gestion . '</script>';
-        echo '<script>var tipo_inmueble = ' . $tipo_inmueble . '</script>';
-        echo '<script>var alcobas = ' . $alcobas . '</script>';
-        echo '<script>var banos = ' . $banos . '</script>';
-        echo '<script>var min = ' . $min . '</script>';
-        echo '<script>var max = ' . $max . '</script>';
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
     ?>
