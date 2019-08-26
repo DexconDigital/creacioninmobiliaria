@@ -12,7 +12,7 @@ include 'layout/layout.php';
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-9">
-            <h2 class="text-center">Estadisticas</h2>
+            <h2 class="text-center">Estadísticas</h2>
             <form method="post" action="uptade_estadisticas.php" enctype="multipart/form-data">
             <input type="hidden" name="id" id="id" value="<?php echo $res[0]?>">
                 <div class="form-group row">

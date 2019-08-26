@@ -36,16 +36,16 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg">
-                    <input type="number" id="precio_minimo_buscar" class="form-control" placeholder="Precio Minímo">
+                    <input type="number" id="precio_minimo_buscar" class="form-control" placeholder="Precio Mínimo">
                 </div>
                 <div class="col-12 col-md-6 col-lg">
-                    <input type="number" id="precio_maximo_buscar" class="form-control" placeholder="Precio Maximo">
+                    <input type="number" id="precio_maximo_buscar" class="form-control" placeholder="Precio Máximo">
                 </div>
                 <div class="col-12 col-md-6 col-lg">
-                    <input type="number" id="area_minima_buscar" class="form-control" placeholder="Areá Miníma">
+                    <input type="number" id="area_minima_buscar" class="form-control" placeholder="Área Mínima">
                 </div>
                 <div class="col-12 col-md-6 col-lg">
-                    <input type="number" id="area_maxima_buscar" class="form-control" placeholder="Areá Maxíma">
+                    <input type="number" id="area_maxima_buscar" class="form-control" placeholder="Área Máxima">
                 </div>
                 <div class="col-12 col-md-6 col-lg">
                     <button type="button" id="buscar" class="btn btn-primary btn-md btn-block">Buscar</button>

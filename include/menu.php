@@ -136,7 +136,7 @@
                                           } ?>" href="index.php">Inicio</a>
               <a class="nav-item nav-link <?php if ($page == 'quienes') {
                                             echo 'active';
-                                          } ?>" href="quienesSomos.php">Quienes Somos</a>
+                                          } ?>" href="quienesSomos.php">Quiénes Somos</a>
               <a class="nav-item nav-link <?php if ($page == 'inmuebles' || $page == 'detalle-inmueble') {
                                             echo 'active';
                                           } ?>" href="inmuebles.php?">Inmuebles</a>

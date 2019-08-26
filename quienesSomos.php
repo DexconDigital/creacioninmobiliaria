@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quienes Somos</title>
+    <title>Quiénes Somos</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
 
@@ -19,7 +19,7 @@
         <div class="container pt-4 mt-4">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h2>Quienes Somos</h2>
+                    <h2>Quiénes Somos</h2>
                     <hr>
                 </div>
                 <div class="col-12 col-lg-12 mb-4">

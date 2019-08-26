@@ -68,7 +68,7 @@
                                 <option>Vender</option>
                                 <option>Arrendar</option>
                                 <option>Comprar</option>
-                                <option>Asesoria</option>
+                                <option>Asesoría</option>
                             </select>
                         </div>
                         <div class="form-group">
