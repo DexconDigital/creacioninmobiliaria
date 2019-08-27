@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-6 order-sm-1 order-md-2">
-                    <img src="images/no_image.png" alt="" width="100%">
+                    <img src="images/quienes_somos.jpg" alt="" width="100%">
                 </div>
             </div>
             <div class="row pt-4 mt-4">

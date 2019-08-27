@@ -28,7 +28,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Arrendatarios</h5>
-                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="arrendatarios.php" class="btn btn-primary">Ingresar</a>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Propietarios</h5>
-                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="propietarios.php" class="btn btn-primary">Ingresar</a>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Pagos PSE</h5>
-                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="" class="btn btn-primary">Ingresar</a>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Formularios</h5>
-                                    <p class="card-text">TEXTO OPCIONAL</p>
+                                    <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="" class="btn btn-primary">Ingresar</a>
                                 </div>
                             </div>
