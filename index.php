@@ -20,10 +20,10 @@ require_once('controladores/indexController.php');
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/slide_1.jpg" class="d-block w-100" alt="slide_inmobiliaria">
+                        <img src="images/slide_1.png" class="d-block w-100" alt="slide_inmobiliaria">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slide_2.jpg" class="d-block w-100" alt="slide_inmobiliaria">
+                        <img src="images/slide_2.png" class="d-block w-100" alt="slide_inmobiliaria">
                     </div>
                     <div class="carousel-item">
                         <img src="images/slide_3.jpg" class="d-block w-100" alt="slide_inmobiliaria">
