@@ -19,25 +19,31 @@
         <div class="container pt-4 mt-4">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h2>Quiénes Somos</h2>
+                    <h2>¿Quiénes Somos?</h2>
                     <hr>
                 </div>
                 <div class="col-12 col-lg-12 mb-4">
                     <p>
-                        Creación Inmobiliaria es una empresa que tiene como propósito, atender las necesidades del sector inmobiliario comercial, cuyo su principal insumo es la actividad  Retail. Conocemos y estudiamos el sector, lo que nos permite ser especialistas en todas las transacciones de tipo inmobiliario, asociado al sector de centros comerciales, malls de conveniencia, y espacios comerciales independientes.
+                        En Creación Inmobiliaria tenemos como propósito, atender las necesidades del sector inmobiliario en la categoría <b>COMERCIAL</b>, los propietarios de áreas y la actividad <b>RETAIL</b> son nuestro principal insumo en la construcción de buenos negocios. Conocemos y estudiamos el sector, lo que nos hace especialistas en las transacciones inmobiliarias, asociadas al sector de centros comerciales, malls de conveniencia, y espacios comerciales independientes.
                     </p>
                     <p>
                         Siempre atentos a la evolución del mercado, para adaptarnos y lograr los mejores resultados para nuestros clientes.
                     </p>
                 </div>
+				<div class="col-12">
+                    <h2>¿Qué Hacemos?</h2>
+                    <hr>
+                </div>
                 <div class="col-12 col-lg-6 order-sm-2 order-md-1">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Conceptualización, estructuración y desarrollo de complejos comerciales.</li>
-                        <li class="list-group-item">Comercialización de complejos comerciales participando como socios de estos desarrollos o liderando la gerencia comercial de los mismos.</li>
-                        <li class="list-group-item">Implementación de estrategias y planes de reingeniería de complejos comerciales ya existentes (rediseños, cambio de vocación de usos comerciales y servicios, recomendación de ajuste de precio, ocupación y administración inmobiliaria).</li>
-                        <li class="list-group-item">Acompañamiento integral en la consecución de inmuebles comerciales de acuerdo a las políticas y plan de expansión de las marcas (entretenimiento, servicios, moda, restaurantes, calzado, medianas y grandes superficies y demás categorías).</li>
-                        <li class="list-group-item">Comercialización al detal de inmuebles comerciales y asesoría en inversión inmobiliaria.</li>
-                        <li class="list-group-item">Administración Inmobiliaria en inmuebles comerciales.</li>
+                        <li class="list-group-item"><b>COLOCACIÓN DE MARCAS</b></li>
+                        <li class="list-group-item">Acompañamiento en el plan de expansión de su marca, información del sector y estudios de interés.</li>
+                        <li class="list-group-item"><b>INVERSIÓN/ DES-INVERSIÓN</b></li>
+                        <li class="list-group-item">Las necesidades de nuestros clientes son diferentes, ¿cuál es la tuya? Las mejores transacciones se hacen con el mayor conocimiento del mercado, aquí estamos.</li>
+                        <li class="list-group-item"><b>ADMINISTRACIÓN INMOBILIARIA</b></li>
+                        <li class="list-group-item">¿La mejor relación es encontrar la satisfacción entre las partes PROPIETARIO E INQUILINO, tu cual eres?</li>
+						<li class="list-group-item"><b>PROYECTOS</b></li>
+                        <li class="list-group-item">Sabemos comercializar, conocemos el mercado tu Proyecto, es nuestro Proyecto.</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-6 order-sm-1 order-md-2">
