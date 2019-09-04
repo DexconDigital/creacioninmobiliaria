@@ -33,7 +33,7 @@ if($destino == $comparador_fotos && $destinos == $comparador_archivo){
         if(!$sql){
         echo 'No se logro actualizar';
     }else{
-        header("Location: lista-noticias.php");
+        header("Location: lista-publicaciones.php");
     }
     // actualizar fotos pero no archivo
 }
@@ -46,7 +46,7 @@ if($destino != $comparador_fotos && $destinos == $comparador_archivo){
     if(!$sql){
         echo 'No se logro actualizar';
     }else{
-        header("Location: lista-noticias.php");
+        header("Location: lista-publicaciones.php");
     }
 }
 // actualizar archivo pero no imagen
@@ -59,7 +59,7 @@ if($destino == $comparador_fotos && $destinos != $comparador_archivo){
     if(!$sql){
         echo 'No se logro actualizar';
     }else{
-        header("Location: lista-noticias.php");
+        header("Location: lista-publicaciones.php");
     }
 }
 // actualizar  ambas cosas
