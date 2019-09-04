@@ -1,3 +1,16 @@
 .bg-dark{
     background-color: #112540 !important;
 }
+
+#content-wrapper{
+    position: relative;
+    overflow-y: hidden;
+}
+#content-wrapper img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

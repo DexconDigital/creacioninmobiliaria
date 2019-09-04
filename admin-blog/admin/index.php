@@ -4,6 +4,6 @@ require_once("conexion.php");
 include 'layout/layout.php';
 ?>
 
-
+<img src="images/background_admin_noticias.png" alt="">
 
 <?php include 'layout/layoutFooter.php';?>
