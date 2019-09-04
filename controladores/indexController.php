@@ -32,7 +32,12 @@ $r = json_decode($result, true);
 
 function modelo_inmueble($r)
 {
-    for ($i = 0; $i < 3; $i++) {
+    $counter= count($r)-1;
+    if($counter > 4){
+        $counter = 4;
+    }
+
+    for ($i = 0; $i < $counter; $i++) {
         $r[$i]['foto1'] = existeImagen(($r[$i]['foto1']));
         $api = $r[$i];
         $codigo = str_ireplace("951-", "", $api['Codigo_Inmueble']);

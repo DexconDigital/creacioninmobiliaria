@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+
 
     $('.subir').click(function(){
         $('body, html').animate({

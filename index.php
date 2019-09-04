@@ -11,6 +11,7 @@ require_once('controladores/indexController.php');
     <title>Creacion Inmobiliaria</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
+
 <body>
     <div class="container-fluid p-0">
         <!-- Menu -->
@@ -69,7 +70,7 @@ require_once('controladores/indexController.php');
                                             <div class="card-body">
                                                 <h5 class="card-title">Colocación de marcas</h5>
                                                 <p class="card-text">
-                                                Acompañamiento en el plan de expansion de su marca, informacion del sector y estudios de interes.
+                                                    Acompañamiento en el plan de expansion de su marca, informacion del sector y estudios de interes.
                                                 </p>
                                             </div>
                                         </div>
@@ -136,8 +137,8 @@ require_once('controladores/indexController.php');
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+    </div>
+    </section>
     <!-- fin informacion -->
     <!-- propiedades destacadas -->
     <section id="destacadas" class="propiedades">
@@ -151,11 +152,11 @@ require_once('controladores/indexController.php');
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="row justify-content-center" id="">
-                        <?php if($r == 'Sin resultados'){
+                        <?php if ($r == 'Sin resultados') {
                             echo '<h2 class="text-center">
                                 No Tiene Inmuebles Destacados
                             </h2>';
-                        }else{
+                        } else {
                             modelo_inmueble($r);
                         }
                         ?>
@@ -214,7 +215,8 @@ require_once('controladores/indexController.php');
         </div>
     </section>
     <!-- fin aliados -->
-    <div class="espacio-footer"></div><footer>
+    <div class="espacio-footer"></div>
+    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-10 col-sm-12 text-center">
@@ -240,76 +242,76 @@ require_once('controladores/indexController.php');
                         <div class="row">
                             <div class="col-12">
                                 <form action="">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Nombre</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Correo</label>
-                                            <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Telefono</label>
-                                            <input type="number" class="form-control" id="" placeholder="Ingrese Telefono">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Dirección</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese su Dirección">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Tipo</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option selected disabled>Tipo</option>
-                                                <option>Apartamento</option>
-                                                <option>Bodegas</option>
-                                                <option>Casa</option>
-                                                <option>local de calle</option>
-                                                <option value="">Lote</option>
-                                                <option value="">Oficina</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Sector</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese Sector">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Disponibilidad</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option selected disabled>Disponibilidad</option>
-                                                <option>Arriendo</option>
-                                                <option>Venta</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Areá</label>
-                                            <input type="text" class="form-control" id="" placeholder="Ingrese Areá">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Mensaje:</label>
-                                            <textarea class="form-control" id="" placeholder="Deje su mensaje" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    Acepto la <a href="politica_de_datos.pdf" download="Politica de tratamiento de datos">  política de privacidad de datos.</a>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                                <label class="" for="">
-                                                    <strong> Nos reservamos el derecho de consignar el inmueble, de acuerdo a su ubicación y estado. </strong>
-                                                </label>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Correo</label>
+                                        <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Telefono</label>
+                                        <input type="number" class="form-control" id="" placeholder="Ingrese Telefono">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Dirección</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese su Dirección">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Tipo</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Tipo</option>
+                                            <option>Apartamento</option>
+                                            <option>Bodegas</option>
+                                            <option>Casa</option>
+                                            <option>local de calle</option>
+                                            <option value="">Lote</option>
+                                            <option value="">Oficina</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Sector</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese Sector">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Disponibilidad</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Disponibilidad</option>
+                                            <option>Arriendo</option>
+                                            <option>Venta</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Areá</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese Areá">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Mensaje:</label>
+                                        <textarea class="form-control" id="" placeholder="Deje su mensaje" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Acepto la <a href="politica_de_datos.pdf" download="Politica de tratamiento de datos"> política de privacidad de datos.</a>
+                                            </label>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <label class="" for="">
+                                            <strong> Nos reservamos el derecho de consignar el inmueble, de acuerdo a su ubicación y estado. </strong>
+                                        </label>
+                                    </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Enviar</button>
-                        </div>
-                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -319,6 +321,11 @@ require_once('controladores/indexController.php');
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
     ?>
+    <script>
+        $('#carouselExampleControls').carousel({
+            interval: 2800
+        })
+    </script>
 </body>
 
 </html>
