@@ -13,6 +13,7 @@ $color_fondo = "13223f";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
         .altologin {
             height: 100vh;

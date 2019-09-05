@@ -36,7 +36,7 @@ $id=$_GET["id"];
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Imagen Actual</label>
                     <div class="col-sm-10">
-                        <img src="<?php echo $res[3]; ?>" alt="" width="200px" height="auto">
+                        <img src="<?php echo $res[3]; ?>" alt="" width="100px" height="auto">
                     </div>
                     <div class="col-sm-10 offset-2">
                         <input type="file" class="form-control-file" name="imagen" id="imagen" accept="image/*">

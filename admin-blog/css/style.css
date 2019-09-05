@@ -6,7 +6,7 @@
     position: relative;
     overflow-y: hidden;
 }
-#content-wrapper img{
+#content-wrapper .fondo-principal{
     position: absolute;
     width: 100%;
     top: 0;
