@@ -8,8 +8,10 @@ $ge = 0;;
 $in = 0;
 $al = 0;
 $ban = 0;
-$min= 0;
-$max = 0;
+$premin= 0;
+$premax = 0;
+$armin = 0;
+$armax = 0;
 $pag = 1;
 
 if(isset($_GET['pag'])){
@@ -22,15 +24,17 @@ if(isset($_GET['ci'])){
     $in = $_GET['in'];
     $al = $_GET['al'];
     $ban = $_GET['ban'];
-    $min = $_GET['min'];
-    $max = $_GET['max'];
+    $premin = $_GET['premin'];
+    $premax = $_GET['premax'];
+    $armin = $_GET['armin'];
+    $armax = $_GET['armax'];
 }
 
 
 $ch = curl_init();
 $headers =  'Authorization:' . TOKEN . '';
 curl_setopt($ch, CURLOPT_URL, 
-$url = 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/'.$pag.'/total/12/departamento/0/ciudad/'.$ci.'/zona/0/barrio/'.$bar.'/tipoInm/'.$in.'/tipOper/'.$ge.'/areamin/0/areamax/0/valmin/'.$min.'/valmax/'.$max.'/campo/0/order/desc/banios/'.$ban.'/alcobas/'.$al.'/garajes/0/sede/0/usuario/0');
+$url = 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/'.$pag.'/total/12/departamento/0/ciudad/'.$ci.'/zona/0/barrio/'.$bar.'/tipoInm/'.$in.'/tipOper/'.$ge.'/areamin/'.$armin.'/areamax/'.$armax.'/valmin/'.$premin.'/valmax/'.$premax.'/campo/0/order/desc/banios/'.$ban.'/alcobas/'.$al.'/garajes/0/sede/0/usuario/0');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);

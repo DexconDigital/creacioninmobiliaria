@@ -1,5 +1,10 @@
 <!-- estilos iniciales de menu -->
 <style>
+  .navbar.fixed-top{
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+      box-shadow: 0px 2px 5px 0px rgba(140,140,140,1);
+  }
   #wrap-preload {
     position: fixed;
     z-index: 10;
@@ -111,7 +116,7 @@
 <!-- fin de estilos iniciales menu -->
 <div class="espacio-menu"></div>
 <!-- conetnido emnu -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light padding-botton-lg-0 padding-left-lg-0" id="menu">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light padding-botton-lg-0 padding-left-lg-0 w-100" id="menu">
   <div class="container-fluid">
     <div class="row w-100">
       <div class="col-12">

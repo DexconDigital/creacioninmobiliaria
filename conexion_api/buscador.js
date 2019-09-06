@@ -184,8 +184,8 @@ var busqueda = function(){
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banos_buscar = existeCampo(banos_buscar);
-    precio_minimo_buscar = existeCampo(minimo_buscar);
-    precio_maximo_buscar = existeCampo(maximo_buscar);
+    precio_minimo_buscar = existeCampo(precio_minimo_buscar);
+    precio_maximo_buscar = existeCampo(precio_maximo_buscar);
     area_minima_buscar = existeCampo(area_minima_buscar);
     area_maxima_buscar = existeCampo(area_maxima_buscar);
 
