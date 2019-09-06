@@ -256,7 +256,19 @@ figure{
     display: inline-block;
     padding: 3px 8px;
 }
-  
+/* paginador */
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #073855;
+  border-color: #073855;
+}
+.propiedades a {
+  transition: 0.2s;
+  color: #073855;
+  outline: none !important;
+}
 /* fin d epropeidades  */
 /* Detalle inmueble **********************************************************************/
 .titulo h2{

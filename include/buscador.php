@@ -1,4 +1,4 @@
-<section id="buscador">
+<section id="buscador" class="wow fadeIn" data-wow-delay=".5s">
     <div class="container-fluid p-0">
         <form>
             <div class="row justify-content-center">

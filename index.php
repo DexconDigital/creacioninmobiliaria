@@ -10,14 +10,36 @@ require_once('controladores/indexController.php');
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Creacion Inmobiliaria</title>
     <?php include 'include/archivosheader.php'; ?>
+    <meta property="og:site_name" content="Creacion Inmobiliaria">
+    <meta property="og:title" content="Creacion Inmobiliaria">
+    <meta property="og:description" content="Empresa Inmobiliaria en Colombia">
+
+    <!-- Image to display -->
+    <!-- Replace   «example.com/image01.jpg» with your own -->
+    <meta property="og:image" itemprop="image" content="http://www.creacioninmobiliaria.com/images/logo_blanco.jpg">
+
+    <!-- No need to change anything here -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+    <meta property="og:image:width" content="150">
+    <meta property="og:image:height" content="150">
+
+    <!-- Website to visit when clicked in fb or WhatsApp-->
+    <meta property="og:url" content="http://www.creacioninmobiliaria.com">
 </head>
 
 <body>
+    <link itemprop="thumbnailUrl" href="http://www.creacioninmobiliaria.com/images/logo_blanco.jpg">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="http://www.creacioninmobiliaria.com/images/logo_blanco.jpg">
+    </span>
     <div class="container-fluid p-0">
         <!-- Menu -->
         <?php include 'include/menu.php'; ?>
         <!-- fin de menu -->
-        <section id="hero" class="overflow-hidden">
+        <section id="hero" class="overflow-hidden wow fadeIn">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -45,13 +67,13 @@ require_once('controladores/indexController.php');
         <!-- Fin buscador -->
         <!-- inicio informacion -->
         <section id="informacion">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 overflow-hidden">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="especialistas">Especialistas en Comercio</h2>
+                        <h2 class="especialistas wow slideInRight" data-wow-delay=".5s">Especialistas en Comercio</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-4 pt-4">
+                <div class="row justify-content-center mt-4 pt-4 wow fadeIn" data-wow-delay=".6s">
                     <div class="col-11">
                         <h4>Nuestros Servicios</h4>
                         <hr>
@@ -59,7 +81,7 @@ require_once('controladores/indexController.php');
                     <div class="col-11">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card mb-3">
+                                <div class="card mb-3 wow slideInLeft" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
@@ -78,7 +100,7 @@ require_once('controladores/indexController.php');
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card mb-3">
+                                <div class="card mb-3 wow slideInUp" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
@@ -96,7 +118,7 @@ require_once('controladores/indexController.php');
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card mb-3">
+                                <div class="card mb-3 wow slideInDown" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
@@ -115,7 +137,7 @@ require_once('controladores/indexController.php');
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card mb-3">
+                                <div class="card mb-3 wow slideInRight" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
                                             <div class="contenedor-icono d-flex justify-content-center align-items-center">
@@ -170,7 +192,7 @@ require_once('controladores/indexController.php');
     <section id="consigna">
         <div class="container-fluid mt-4 pt-4">
             <div class="row justify-content-center">
-                <div class="col-11">
+                <div class="col-11 wow bounceInUp" data-wow-delay="0.5s">
                     <div class="row border">
                         <div class="col-12 col-lg d-flex align-items-center">
                             <h5 class="text-center">¿Quieres que tu propiedad sea listada aquí?</h5>
@@ -195,7 +217,7 @@ require_once('controladores/indexController.php');
                     <h4>Nuestros Aliados</h4>
                     <hr>
                 </div>
-                <div class="col-12">
+                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
                     <div class="row justify-content-center aling-items-center">
                         <div class="col-12 col-md-5 col-lg-3 d-flex justify-content-center aling-items-center">
                             <img src="images/SIMI.png" class="img-fluid" alt="">

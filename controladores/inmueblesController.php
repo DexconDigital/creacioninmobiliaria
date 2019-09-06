@@ -1,4 +1,6 @@
 <?php 
+require 'vendor/autoload.php';
+use JasonGrimes\Paginator;
 require 'token.php';
 
 $url_pagina = $_SERVER["REQUEST_URI"];
@@ -53,7 +55,7 @@ function modelo_inmueble($r){
         $api = $r[$i];
         $codigo = str_ireplace("951-", "", $api['Codigo_Inmueble']);
         echo '
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 wow fadeIn">
         <div class="property">
             <a href="detalle-Inmueble.php?co='.$api['Codigo_Inmueble'].'">
                 <div class="property-image"><img alt="" src="'.$api['foto1'].'"></div>
@@ -110,3 +112,13 @@ function existeImagen($r)
     }
     return $r;
 }
+
+
+$valor_reemplazar = '&pag='.$pag.'';
+$url_pagina = str_ireplace($valor_reemplazar, '', $url_pagina);
+$totalItems = $r['datosGrales']['totalInmuebles'];
+$itemsPerPage = 12;
+$currentPage = $pag;
+$urlPattern = $url_pagina.'&pag=(:num)';
+
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);

@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-11 col-lg-7">
-                    <div class="card mb-3">
+                    <div class="card mb-3 wow fadeInLeft" data-wow-delay="0.3s" >
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <a href="arrendatarios.php">
@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body>
                                     <h5 class="card-title">Arrendatarios</h5>
                                     <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="arrendatarios.php" class="btn btn-primary">Ingresar</a>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-11 col-lg-7">
-                    <div class="card mb-3">
+                    <div class="card mb-3 wow fadeInRight" data-wow-delay="0.4s">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <a href="propietarios.php">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-11 col-lg-7">
-                    <div class="card mb-3">
+                    <div class="card mb-3 wow fadeInLeft" data-wow-delay="0.5s">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                             <a href="">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-11 col-lg-7">
-                    <div class="card mb-3">
+                    <div class="card mb-3 wow fadeInRight" data-wow-delay="0.5s">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="images/Formularios.png" class="card-img" alt="...">

@@ -12,6 +12,16 @@ require_once('include/funciones-detalle-inmueble.php');
     <?php include 'include/archivosheader.php'; ?>
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/carrousel.inmuebles.css">
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
     <style>
         @media (max-width: 992px) {
             .asesor-titulo {
@@ -46,10 +56,27 @@ require_once('include/funciones-detalle-inmueble.php');
             font-size: 15px;
             margin-bottom: 5px;
         }
+        #map {
+            height: 350px;
+            z-index: 20;
+        }
+
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
     </style>
 </head>
 
 <body>
+    
+    <link itemprop="thumbnailUrl" href="<?php echo $r['fotos'][0]['foto']; ?>">
+        <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+            <link itemprop="url" href="<?php echo $r['fotos'][0]['foto']; ?>">
+        </span>
     <!-- Menu -->
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
@@ -230,7 +257,7 @@ require_once('include/funciones-detalle-inmueble.php');
                             if ($r['latitud'] != "" && $r['longitud'] != "") {
                                 echo
                                     '<div class="col-12 mt-4">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5132168991745!2d-75.56084008573426!3d6.195811728606066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682909364c4ef%3A0xdad1811edccdf71f!2sEdificio+Platinum+Superior!5e0!3m2!1ses!2sco!4v1559828906319!5m2!1ses!2sco" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <div id="map" class="w-100"></div>
                                     </div>';
                             }
                             ?>
@@ -296,6 +323,18 @@ require_once('include/funciones-detalle-inmueble.php');
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
     ?>
+    <script src="mapas/leaflet.js" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+            .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+            .openPopup();
+    </script>
 </body>
 
 </html>

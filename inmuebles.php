@@ -54,19 +54,29 @@ require_once('controladores/inmueblesController.php');
                 </div>
             </div>
             <div class="row justify-content-center">
-            <div class="col-12">
-                <p class="text-center"><small id="pagina_numero"></small></p>
-            </div>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item previus">
-                            <a class="page-link" onclick="paginador('ant')">Atras</a>
-                        </li>
-                        <li class="page-item next">
-                            <a class="page-link" onclick="paginador('sig')">Siguiente</a>
-                        </li>
+                <div class="col-12">
+                    <p class="text-center"><small id="pagina_numero"></small></p>
+                </div>
+                <?php if (is_array($r)) : ?>
+                    <ul class="pagination mt-4 align-items-end justify-content-center">
+                        <?php if ($paginator->getPrevUrl()) : ?>
+                            <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo; Atras</a></li>
+                        <?php endif; ?>
+                        <?php foreach ($paginator->getPages() as $page) : ?>
+                            <?php if ($page['url']) : ?>
+                                <li <?php echo $page['isCurrent'] ? 'class="page-item active"' : ''; ?>>
+                                    <a href="<?php echo $page['url']; ?>" class="page-link"><?php echo $page['num']; ?></a>
+                                </li>
+                            <?php else : ?>
+                                <li class="page-item disabled"><span><?php echo $page['num']; ?></span></li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+
+                        <?php if ($paginator->getNextUrl()) : ?>
+                            <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link">Siguiente &raquo;</a></li>
+                        <?php endif; ?>
                     </ul>
-                </nav>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -80,10 +90,6 @@ require_once('controladores/inmueblesController.php');
             </div>
         </div>
     </footer>
-    <?php echo '<script>var url = "'.$url_pagina.'"; </script>';?>                     
-    <?php echo '<script>var pagina = '.$pag.'; </script>';?>
-    <?php echo '<script>var totalpagina = '.$r['datosGrales']['totalPagina'].'; </script>';?>
-    <?php echo '<script>var totalInmuebles = '.$r['datosGrales']['totalInmuebles'].'; </script>';?>
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
