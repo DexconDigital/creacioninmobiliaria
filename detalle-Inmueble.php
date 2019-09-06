@@ -166,11 +166,11 @@ require_once('include/funciones-detalle-inmueble.php');
                                             <td class="text-right"><?php echo $r['Tipo_Inmueble'] ?></td>
                                         </tr>
                                         <tr>
-                                            <th class=text-left" scope="row">Operacion:</th>
+                                            <th class=text-left" scope="row">Operación:</th>
                                             <td class="text-right"><?php echo $r['Gestion'] ?></td>
                                         </tr>
                                         <tr>
-                                            <th class=text-left" scope="row">Areá:</th>
+                                            <th class=text-left" scope="row">Área:</th>
                                             <td class="text-right"><?php echo $r['AreaConstruida'] ?> m<sup>2</sup></td>
                                         </tr>
                                         <tr>
@@ -215,7 +215,7 @@ require_once('include/funciones-detalle-inmueble.php');
                             if (count($r['caracteristicasInternas']) > 0) {
                                 echo
                                     '<div class="col-12 mt-4">
-                                        <h2 class="item-titulo">Caracteristicas internas</h2>
+                                        <h2 class="item-titulo">Características internas</h2>
                                         <ul class="list-caracteristicas">';
                                 for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
                                     $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
@@ -227,7 +227,7 @@ require_once('include/funciones-detalle-inmueble.php');
                             if (count($r['caracteristicasExternas']) != 0) {
                                 echo
                                     '<div class="col-12 mt-4">
-                                        <h2 class="item-titulo">Caracteristicas Externas</h2>
+                                        <h2 class="item-titulo">Características Externas</h2>
                                         <ul class="list-caracteristicas">';
                                 for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
                                     $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
@@ -239,7 +239,7 @@ require_once('include/funciones-detalle-inmueble.php');
                             if (count($r['caracteristicasAlrededores']) != 0) {
                                 echo
                                     '<div class="col-12 mt-4">
-                                        <h2 class="item-titulo">Caracteristicas de los alrededores</h2>
+                                        <h2 class="item-titulo">Características de los alrededores</h2>
                                         <ul class="list-caracteristicas">';
                                 for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
                                     $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
@@ -277,10 +277,10 @@ require_once('include/funciones-detalle-inmueble.php');
                                         <input type="text" class="form-control" placeholder="Nombre">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Correó">
+                                        <input type="email" class="form-control" placeholder="Correo">
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Telefono">
+                                        <input type="number" class="form-control" placeholder="Teléfono">
                                     </div>
                                     <div class="form-group">
                                         <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>

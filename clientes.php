@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body>
+                                <div class="card-body">
                                     <h5 class="card-title">Arrendatarios</h5>
                                     <!--<p class="card-text">TEXTO OPCIONAL</p>-->
                                     <a href="arrendatarios.php" class="btn btn-primary">Ingresar</a>
