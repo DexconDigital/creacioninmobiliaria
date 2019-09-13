@@ -19,7 +19,7 @@
         <div class="container pt-4 mt-4">
             <div class="row justify-content-center">
                 <div class="col-12 wow fadeInLeft" data-wow-delay="0.6s" >
-                    <h2>¿Quiénes Somos?</h2>
+                    <h2>¿Nuestro Propósito Es?</h2>
                     <hr>
                 </div>
                 <div class="col-12 col-lg-12 mb-4 wow fadeInLeft" data-wow-delay="0.6s">
@@ -50,6 +50,7 @@
                     <img src="images/quienes_somos.jpg" alt="" width="100%">
                 </div>
             </div>
+			<!--
             <div class="row pt-4 mt-4">
                 <div class="col-12 col-lg-12 mt-4 wow fadeInLeft" data-wow-delay="0.6s">
                     <h2>Misión</h2>
@@ -60,6 +61,7 @@
                     <p>En el 2020 ser la empresa líder en la gestión de proyectos inmobiliarios y comercialización de activos comerciales, especializándonos en las necesidades de nuestros clientes y del mercado.</p>
                 </div>
             </div>
+			-->
         </div>
     </section>
     <!-- queines somos -->
