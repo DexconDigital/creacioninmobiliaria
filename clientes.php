@@ -57,7 +57,7 @@
                     <div class="card mb-3 wow fadeInLeft" data-wow-delay="0.5s">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                            <a href="">
+                            <a href="https://gateway2.tucompra.com.co/sites/contextoinmobiliario" target="_blank">
                                 <img src="images/Pagos_PSE.png" class="card-img" alt="...">
                                 </a>
                             </div>
