@@ -65,7 +65,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pagos PSE</h5>
                                     <!--<p class="card-text">TEXTO OPCIONAL</p>-->
-                                    <a href="" class="btn btn-primary">Ingresar</a>
+                                    <a href="https://gateway2.tucompra.com.co/sites/contextoinmobiliario" target="_blank" class="btn btn-primary">Ingresar</a>
                                 </div>
                             </div>
                         </div>
