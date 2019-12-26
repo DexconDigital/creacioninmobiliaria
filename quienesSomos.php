@@ -43,7 +43,7 @@
                         <li class="list-group-item"><b>ADMINISTRACIÓN INMOBILIARIA</b></li>
                         <li class="list-group-item">¿La mejor relación es encontrar la satisfacción entre las partes PROPIETARIO E INQUILINO, tu cual eres?</li>
 						<li class="list-group-item"><b>PROYECTOS</b></li>
-                        <li class="list-group-item">Sabemos comercializar, conocemos el mercado tu Proyecto, es nuestro Proyecto.</li>
+                        <li class="list-group-item">Comercializamos, conocemos el mercado, tu proyecto es nuestro proyecto.</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6 col-6 order-sm-1 order-md-2 wow flipInX" data-wow-delay="0.6s">

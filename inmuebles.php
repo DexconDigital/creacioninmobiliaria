@@ -43,7 +43,7 @@ require_once('controladores/inmueblesController.php');
                     <div class="row" id="">
                         <?php if ($r == 'Sin resultados') {
                             echo '<h2 class="text-center">
-                                No Tiene Inmuebles Destacados
+                                No Se Encontraron Inmuebles
                             </h2>';
                         } else {
                             modelo_inmueble($r);

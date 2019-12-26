@@ -55,7 +55,7 @@ function modelo_inmueble($r){
         $api = $r[$i];
         $codigo = str_ireplace("951-", "", $api['Codigo_Inmueble']);
         echo '
-        <div class="col-12 col-md-6 col-lg-3 wow fadeIn">
+        <div class="col-12 col-md-6 col-lg-4 wow fadeIn">
         <div class="property">
             <a href="detalle-Inmueble.php?co='.$api['Codigo_Inmueble'].'">
                 <div class="property-image"><img alt="" src="'.$api['foto1'].'"></div>

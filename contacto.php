@@ -42,8 +42,8 @@
                             </ul>
                             <ul>
                                 <li> <strong> Fijo: </strong><a href="tel:+5743537590">(+574)353 7590 </a></li>
-                                <li> <strong>WhatsApp: </strong><a href="http://wa.me/573137968073">3137968073</a></li>
-                                <li> <strong>Celular: </strong><a href="tel:+573113318139">3113318139</a></li>
+                                <li> <strong>WhatsApp: </strong><a href="http://wa.me/573022760773">302 2760 773</a></li>
+                                <li> <strong>Celular: </strong><a href="tel:+573022760773">302 2760 773</a></li>
                                 <li> <strong>Correo: </strong><a href="malito: info@creacioninmobiliaria.com">info@creacioninmobiliaria.com</a></li>
                             </ul>
                         </div>

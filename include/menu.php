@@ -121,11 +121,12 @@
     <div class="row w-100">
       <div class="col-12">
         <ul class="navbar-nav mr-auto d-none d-lg-flex size-iconos pl-4 mb-2">
-          <li class="mr-3 ml-auto"><a href="tel:+5743537590"><i class="fas fa-phone pr-2"></i>(+574) 35 37590</a></li>
+          <li class="mr-3 ml-auto"><a href="tel:+5743537590"><i class="fas fa-phone pr-2"></i>(+574) 353 7590</a></li>
           <li class="mr-3"><a href="mailto:info@creacioninmobiliaria.com"><i class="far fa-envelope pr-2"></i>info@creacioninmobiliaria.com</a></li>
-          <li class="mr-3"><a href="tel:+573022760773"><i class="fas fa-mobile-alt pr-2"></i>3022760773</a></li>
-          <li class="mr-3"><a href="wa.me/573022760773"><img src="./images/whatsapp.png" alt="Imagen enlaze whatsapp de creacion inmobiliaria" class="mr-2">3022760773</a></li>
+          <li class="mr-3"><a href="tel:+573022760773"><i class="fas fa-mobile-alt pr-2"></i>302 276 0773</a></li>
+          <li class="mr-3"><a href="wa.me/573022760773"><img src="./images/whatsapp.png" alt="Imagen enlaze whatsapp de creacion inmobiliaria" class="mr-2">302 276 0773</a></li>
           <li class="mr-3"><a href="https://www.facebook.com/CreacionInmobiliaria"><img src="./images/facebook.png" alt="imagen enlaze facebook de creacion inmobiliaria" class="mr-2"> Facebook</a></li>
+		  <li class="mr-3"><a href="https://www.instagram.com/Creacioninmobiliariacolombia/"><img src="./images/instagram.png" alt="imagen enlaze instagram de creacion inmobiliaria" class="mr-2"> Instagram</a></li>
         </ul>
         <div class="col-12 p-0 d-lg-flex aling-items-center">
           <a class="navbar-brand padding-botton-lg-0" href="./">
