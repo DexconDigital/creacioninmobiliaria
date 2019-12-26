@@ -190,7 +190,7 @@ var busqueda = function(){
     area_maxima_buscar = existeCampo(area_maxima_buscar);
 
     if (code !== "") {
-        window.location.href = 'detalle-inmueble.php?co=933-' + code + '';
+        window.location.href = 'detalle-Inmueble.php?co=951-' + code + '';
     }else{
         window.location.href = 'inmuebles.php?ci='+ciudad_buscar+
         '&&bar='+barrio_buscar+
