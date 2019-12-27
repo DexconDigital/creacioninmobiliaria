@@ -80,7 +80,7 @@ require_once('controladores/indexController.php');
                     </div>
                     <div class="col-11">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3 color_fichas">
                                 <div class="card mb-3 wow slideInLeft" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -99,7 +99,7 @@ require_once('controladores/indexController.php');
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3 color_fichas">
                                 <div class="card mb-3 wow slideInUp" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -117,7 +117,7 @@ require_once('controladores/indexController.php');
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3 color_fichas">
                                 <div class="card mb-3 wow slideInDown" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">
@@ -136,7 +136,7 @@ require_once('controladores/indexController.php');
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3 color_fichas">
                                 <div class="card mb-3 wow slideInRight" data-wow-delay="0.8s">
                                     <div class="row no-gutters">
                                         <div class="col-2">

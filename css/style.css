@@ -71,6 +71,21 @@ body>.container-fluid{
 }
 #informacion .card{
     height: 270px;
+    border: 1px solid rgb(19, 34, 63) !important;
+}
+ .color_fichas{
+  background-color: white;
+  transition: all 250ms ease-in-out;
+}
+.color_fichas:hover{
+  -webkit-transform: scale(1.05,1.05);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.05,1.05);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+  
+
 }
 .propiedades .property{
     margin-bottom: 30px;
