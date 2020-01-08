@@ -11,6 +11,7 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').attr("disabled", true);
             $('#area_minima_buscar').attr("disabled", true);
             $('#area_maxima_buscar').attr("disabled", true);
+            /* $('#pre').attr("disabled", true); */
         }else{
             $('#ciudad_buscar').removeAttr("disabled");
             $('#barrio_buscar').removeAttr("disabled");
@@ -20,6 +21,7 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').removeAttr("disabled");
             $('#area_minima_buscar').removeAttr("disabled");
             $('#area_maxima_buscar').removeAttr("disabled");
+            /* $('#pre').removeAttr("disabled"); */
         }
     });
 
@@ -150,6 +152,10 @@ $(document).ready(function () {
     });
 });
 
+
+    /* Para obtener el valor */
+  /*  */
+
 // Definir las variables que se van a usar para almacenar los datos que se traen del buscador
 var code, 
     ciudad_buscar, 
@@ -162,6 +168,7 @@ var code,
     precio_minimo_buscar,
     area_minima_buscar,
     area_maxima_buscar;
+    /* precio; */
 // Esta funcion trae los campos digitados en el buscador
 var busqueda = function(){
     code = $("#codigo_buscar").val();
