@@ -87,7 +87,7 @@ require_once('controladores/inmueblesController.php');
         <div class="container-fluid">
             <div class="row">
                 <div class="col-10 col-sm-12 text-center">
-                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
+                    <span>©Copyright 2020 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ require_once('controladores/inmueblesController.php');
     include 'include/boton-subir.php';
     ?>
     <script src="conexion_api/token_api.js"></script>;
-    <cript src="conexion_api/validadores.js"></script>;
+    <script src="conexion_api/validadores.js"></script>;
     <script src="conexion_api/buscador.js"></script>;
 </body>
 

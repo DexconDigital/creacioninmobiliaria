@@ -406,6 +406,7 @@ require_once('controladores/indexController.php');
     </div>
     <!-- Fin del modal -->
     <!-- Scripts en comun -->
+    
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
