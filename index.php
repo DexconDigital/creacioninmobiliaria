@@ -29,6 +29,46 @@ require_once('controladores/indexController.php');
     <!-- Website to visit when clicked in fb or WhatsApp-->
     <meta property="og:url" content="http://www.creacioninmobiliaria.com">
 </head>
+<style>
+    #newsletter {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, .2);
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #newsletter h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 15pt;
+    }
+
+    #newsletter h2 span {
+        font-weight: 900;
+        font-size: 28pt;
+    }
+
+    #newsletter .input-group {
+        margin-top: 25px;
+    }
+
+    .btn-default {
+        background-color: #13223f;
+        color: white !important;
+        font-size: 18px !important;
+
+    }
+
+    .btn-default:focus {
+        color: white;
+    }
+
+    #consigna .margen {
+        margin-bottom: 3.5rem !important;
+    }
+</style>
 
 <body>
     <link itemprop="thumbnailUrl" href="http://www.creacioninmobiliaria.com/images/logo_blanco.jpg">
@@ -64,8 +104,8 @@ require_once('controladores/indexController.php');
         </section>
         <!-- Buscador -->
         <?php
-         include 'include/buscador.php'; 
-         ?>
+        include 'include/buscador.php';
+        ?>
         <!-- Fin buscador -->
         <!-- inicio informacion -->
         <section id="informacion">
@@ -192,23 +232,48 @@ require_once('controladores/indexController.php');
     <!-- fin de propiedades destacadas -->
     <!-- publica tu propiedad -->
     <section id="consigna">
-        <div class="container-fluid mt-4 pt-4">
-            <div class="row justify-content-center">
-                <div class="col-11 wow bounceInUp" data-wow-delay="0.5s">
-                    <div class="row border">
-                        <div class="col-12 col-lg d-flex align-items-center">
-                            <h5 class="text-center">¿Quieres que tu propiedad sea listada aquí?</h5>
-                        </div>
-                        <div class="col-12 col-lg-3 d-flex align-items-center">
-                            <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a>
-                        </div>
-                        <!-- <div class="col-3 offset-3 pr-0 mr-0">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container-fluid mt-4 pt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-11 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="border text-center">
+                                    <div class="col-12 col-lg  margen">
+                                        <h5 class="text-center">¿Quieres que tu propiedad sea listada aquí?</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-12">
+                                        <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a>
+                                    </div>
+                                    <!-- <div class="col-3 offset-3 pr-0 mr-0">
                             <a href="" class="btn btn-primary">Consigna tu inmueble</a>
                         </div> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-6">
+                    <!-- BEGIN NEWSLETTER -->
+                    <div class="col-sm-12 pt-4 wow bounceInUp" data-wow-delay="0.5s">
+                        <div id="newsletter" class="col-sm-12 border">
+                            <h2 class="section-title">Suscríbete a
+                                nuestro <br><span>Boletín de información</span></h2>
+                            <form action="" method="POST">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Ingresa tu Email" name="newsletter_email" id="newsletter_email" class="form-control" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">Suscribirte</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END NEWSLETTER -->
                 </div>
             </div>
         </div>
+
     </section>
     <!-- fin publia tu propiedad -->
     <!-- aliados -->
@@ -350,6 +415,7 @@ require_once('controladores/indexController.php');
             interval: 2800
         })
     </script>
+    
 </body>
 
 </html>

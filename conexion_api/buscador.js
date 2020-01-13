@@ -165,8 +165,8 @@ var code,
     precio_minimo_buscar,
     area_minima_buscar,
     area_maxima_buscar;
-
 /* precio; */
+
 // Esta funcion trae los campos digitados en el buscador
 var busqueda = function () {
     code = $("#codigo_buscar").val();
@@ -180,6 +180,7 @@ var busqueda = function () {
     precio_maximo_buscar = $('#precio_maximo_buscar').val();
     area_minima_buscar = $('#area_minima_buscar').val();
     area_maxima_buscar = $('#area_maxima_buscar').val();
+    /* precio = $('#pre').val(); */
 
 
     // Si no trae nada del buscador definirla en cero
@@ -189,10 +190,11 @@ var busqueda = function () {
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banos_buscar = existeCampo(banos_buscar);
-    /* precio_minimo_buscar = existeCampo(precio_minimo_buscar);
-    precio_maximo_buscar = existeCampo(precio_maximo_buscar); */
+    precio_minimo_buscar = existeCampo(precio_minimo_buscar);
+    precio_maximo_buscar = existeCampo(precio_maximo_buscar);
     area_minima_buscar = existeCampo(area_minima_buscar);
     area_maxima_buscar = existeCampo(area_maxima_buscar);
+    /* precio = existeCampo(precio); */
 
     if (code !== "") {
         window.location.href = 'detalle-Inmueble.php?co=951-' + code + '';

@@ -28,7 +28,9 @@ require_once('controladores/inmueblesController.php');
     <!-- Menu -->
     <?php include 'include/menu.php'; ?>
     <!-- fin de menu -->
-    <?php include 'include/buscador.php'; ?>
+    <?php
+    include 'include/buscador.php';
+    ?>
     <!-- inmuebles  -->
     <section id="destacadas" class="propiedades">
         <div class="container-fluid p-0 mt-4 pt-4">
@@ -90,10 +92,14 @@ require_once('controladores/inmueblesController.php');
             </div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
     ?>
+    <script src="conexion_api/token_api.js"></script>;
+    <cript src="conexion_api/validadores.js"></script>;
+    <script src="conexion_api/buscador.js"></script>;
 </body>
 
 </html>
