@@ -1,12 +1,12 @@
 {
-    "name": "sebastian/creacion-inmobiliaria",
+    "name": "vendor2/daniel",
     "authors": [
         {
-            "name": "sebastian",
-            "email": "me@sebastiancastiblanco.com"
+            "name": "william solano",
+            "email": "wdsp9898@gmail.com"
         }
     ],
     "require": {
-        "jasongrimes/paginator": "~1.0"
+        "phpmailer/phpmailer": "^6.1"
     }
 }

@@ -7,7 +7,9 @@ footer{
   bottom: 0;
   width: 100%;
 }
-
+input,::placeholder, select{
+  color: black !important;
+}
 /* Color de logo #13223f; */
 .bg-light{
   background-color: #fff !important;

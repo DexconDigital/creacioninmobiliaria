@@ -319,38 +319,33 @@ require_once('controladores/indexController.php');
     <!-- Modal -->
     <div class="modal fade" id="consignaInmueble" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Consigna tu Inmueble</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <form action="">
+            <form action="email/consignainmueble.php" method="POST">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Consigna tu Inmueble</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
                                     <div class="form-group">
-                                        <label for="exampleFormControlInput1">Nombre</label>
-                                        <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
+                                        <input type="text" class="form-control" name="nombre" placeholder="Nombres y Apellidos">
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Correo</label>
-                                        <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
+                                        <input type="email" class="form-control" name="email" placeholder="Correo electrónico">
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Telefono</label>
-                                        <input type="number" class="form-control" id="" placeholder="Ingrese Telefono">
+                                        <input type="number" class="form-control" name="telefono" placeholder="Teléfono">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlInput1">Dirección</label>
-                                        <input type="text" class="form-control" id="" placeholder="Ingrese su Dirección">
+                                        <input type="text" class="form-control" name="direccion" placeholder="Dirección">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Tipo</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option selected disabled>Tipo</option>
+                                        <select class="form-control" name="tipo_inm">
+                                            <option sselected="" disabled="">Tipo</option>
                                             <option>Apartamento</option>
                                             <option>Bodegas</option>
                                             <option>Casa</option>
@@ -360,24 +355,20 @@ require_once('controladores/indexController.php');
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Sector</label>
-                                        <input type="text" class="form-control" id="" placeholder="Ingrese Sector">
+                                        <input type="text" class="form-control" name="sector" placeholder="Ingrese Sector">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Disponibilidad</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select class="form-control" name="transaccion">
                                             <option selected disabled>Disponibilidad</option>
                                             <option>Arriendo</option>
                                             <option>Venta</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Areá</label>
-                                        <input type="text" class="form-control" id="" placeholder="Ingrese Areá">
+                                        <input type="text" class="form-control" name="area" placeholder="Ingrese Aréa">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Mensaje:</label>
-                                        <textarea class="form-control" id="" placeholder="Deje su mensaje" rows="3"></textarea>
+                                        <textarea class="form-control" name="mensaje" placeholder="Deje su mensaje" rows="3"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-check">
@@ -392,21 +383,21 @@ require_once('controladores/indexController.php');
                                             <strong> Nos reservamos el derecho de consignar el inmueble, de acuerdo a su ubicación y estado. </strong>
                                         </label>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
     <!-- Fin del modal -->
     <!-- Scripts en comun -->
-    
+
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
@@ -416,7 +407,7 @@ require_once('controladores/indexController.php');
             interval: 2800
         })
     </script>
-    
+
 </body>
 
 </html>
