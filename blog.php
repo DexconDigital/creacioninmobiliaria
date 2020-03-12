@@ -8,7 +8,7 @@ require_once('controladores/noticiasController.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clientes</title>
+    <title>Proyectos</title>
     <?php include 'include/archivosheader.php'; ?>
 </head>
 
@@ -38,14 +38,10 @@ require_once('controladores/noticiasController.php');
     </section>
     <!-- fin contenido -->
     <!-- Scripts en comun -->
-    <div class="espacio-footer"></div><footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-10 col-sm-12 text-center">
-                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
-                </div>
-            </div>
-        </div>
+    <!-- footer -->
+    <div class="espacio-footer"></div>
+        <?php include 'include/footer.php' ?>
+    </div>
     </footer>
     <?php 
     include 'include/archivosfooter.php';

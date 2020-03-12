@@ -65,15 +65,11 @@
         </div>
     </section>
     <!-- queines somos -->
-    <div class="espacio-footer"></div><footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-10 col-sm-12 text-center">
-                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
+    <!-- footer -->
+    <div class="espacio-footer"></div>
+        <?php include 'include/footer.php' ?>
+    </div>
     <!-- Scripts en comun -->
     <?php 
     include 'include/archivosfooter.php';

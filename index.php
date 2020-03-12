@@ -66,7 +66,7 @@ require_once('controladores/indexController.php');
     }
 
     #consigna .margen {
-        margin-bottom: 3.5rem !important;
+        margin-bottom: 4rem !important;
     }
 </style>
 
@@ -234,7 +234,7 @@ require_once('controladores/indexController.php');
     <section id="consigna">
         <div class="col-12">
             <div class="row">
-                <div class="col-6">
+                <!-- <div class="col-lg-6 col-md-6 col-12">
                     <div class="container-fluid mt-4 pt-4">
                         <div class="row justify-content-center">
                             <div class="col-11 wow bounceInUp" data-wow-delay="0.5s">
@@ -243,27 +243,41 @@ require_once('controladores/indexController.php');
                                         <h5 class="text-center">¿Quieres que tu propiedad sea listada aquí?</h5>
                                     </div>
                                     <div class="col-12 col-lg-12">
-                                        <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a>
+                                        <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a><br>
                                     </div>
-                                    <!-- <div class="col-3 offset-3 pr-0 mr-0">
-                            <a href="" class="btn btn-primary">Consigna tu inmueble</a>
-                        </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
+                </div> -->
+                <div class="col-lg-6 col-md-6 col-12">
                     <!-- BEGIN NEWSLETTER -->
-                    <div class="col-sm-12 pt-4 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="col-sm-12 pt-4 wow bounceInUp" data-wow-delay="0.5s" style="top: 0px;">
+                        <div id="newsletter" class="col-sm-12 border">
+                            <h5 class="text-center margen">¿Quieres que tu propiedad sea listada aquí?</h5>
+                            <form action="email/boletin.php" method="POST">
+                                <div class="input-group">
+
+                                    <span class="input-group-btn col-12 col-lg-12">
+                                        <a href="#consignaInmueble" data-toggle="modal" class="btn btn-primary btn-lg btn-block ml-auto">Consigna tu inmueble</a><br>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END NEWSLETTER -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <!-- BEGIN NEWSLETTER -->
+                    <div class="col-sm-12 pt-4 wow bounceInUp" data-wow-delay="0.5s" style="top: 0px;">
                         <div id="newsletter" class="col-sm-12 border">
                             <h2 class="section-title">Suscríbete a
                                 nuestro <br><span>Boletín de información</span></h2>
-                            <form action="" method="POST">
+                            <form action="email/boletin.php" method="POST">
                                 <div class="input-group">
-                                    <input type="text" placeholder="Ingresa tu Email" name="newsletter_email" id="newsletter_email" class="form-control" />
+                                    <input type="text" placeholder="Ingresa tu Email" name="email" id="email" class="form-control" />
                                     <span class="input-group-btn">
-                                        <button class="btn btn-default" type="submit">Suscribirte</button>
+                                        <button class="btn btn-default" type="submit">Suscribirte</button><br><br>
                                     </span>
                                 </div>
                             </form>

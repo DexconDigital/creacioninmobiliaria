@@ -131,7 +131,7 @@ require_once('include/funciones-detalle-inmueble.php');
                                 <table class="table table-borderless">
                                     <tbody>
                                         <tr>
-                                            <th class=text-left" scope="row">Código:</th>
+                                            <th class="text-left" scope="row">Código:</th>
                                             <td class="text-right"><?php echo $codigo ?></td>
                                         </tr>
                                         <!-- Validar si es arriendo, venta o arriendo venta -->

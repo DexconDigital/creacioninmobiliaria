@@ -1,3 +1,4 @@
+var optionsSelect;
 $(document).ready(function () {
     // si el campo codigo tiene un valor los demas  campos se desabilitan
     $('#codigo_buscar').keyup(function () {
@@ -11,17 +12,17 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').attr("disabled", true);
             $('#area_minima_buscar').attr("disabled", true);
             $('#area_maxima_buscar').attr("disabled", true);
-            /* $('#pre').attr("disabled", true); */
+            $('#price').attr("disabled", true);
         } else {
             $('#ciudad_buscar').removeAttr("disabled");
             $('#barrio_buscar').removeAttr("disabled");
             $('#tipo_inmueble_buscar').removeAttr("disabled");
             $('#tipo_gestion_buscar').removeAttr("disabled");
-            $('#precio_minimo_buscar').removeAttr("disabled");
+            $('#prcio_minimo_buscar').removeAttr("disabled");
             $('#precio_maximo_buscar').removeAttr("disabled");
             $('#area_minima_buscar').removeAttr("disabled");
             $('#area_maxima_buscar').removeAttr("disabled");
-            /* $('#pre').removeAttr("disabled"); */
+            $('#price').removeAttr("disabled");
         }
     });
 
@@ -148,6 +149,64 @@ $(document).ready(function () {
             busqueda();
         }
     });
+
+    optionsSelect = [
+        {
+            "Id": 0,
+            "premin": 0,
+            "premax": 0
+        },
+        {
+            "Id": 1,
+            "premin": 500000,
+            "premax": 1000000
+        },
+        {
+            "Id": 2,
+            "premin": 1000000,
+            "premax": 5000000
+        },
+        {
+            "Id": 3,
+            "premin": 5000000,
+            "premax": 8000000
+        },
+        {
+            "Id": 4,
+            "premin": 8000000,
+            "premax": 30000000
+        },
+        {
+            "Id": 5,
+            "premin": 30000000,
+            "premax": 50000000
+        },
+        {
+            "Id": 6,
+            "premin": 50000000,
+            "premax": 300000000
+        },
+        {
+            "Id": 7,
+            "premin": 300000000,
+            "premax": 600000000
+        },
+        {
+            "Id": 8,
+            "premin": 600000000,
+            "premax": 1000000000
+        },
+        {
+            "Id": 9,
+            "premin": 1000000000,
+            "premax": 2000000000
+        },
+        {
+            "Id": 10,
+            "premin": 20000000000,
+            "premax": 12000000000
+        }
+    ];
 });
 
 
@@ -165,6 +224,7 @@ var code,
     precio_minimo_buscar,
     area_minima_buscar,
     area_maxima_buscar;
+    price;
 /* precio; */
 
 // Esta funcion trae los campos digitados en el buscador
@@ -176,10 +236,11 @@ var busqueda = function () {
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
     alcobas_buscar = $('#alcobas_buscar').val();
     banos_buscar = $('#banos_buscar').val();
-    precio_minimo_buscar = $('#precio_minimo_buscar').val();
-    precio_maximo_buscar = $('#precio_maximo_buscar').val();
+    /* precio_minimo_buscar = $('#precio_minimo_buscar').val();
+    precio_maximo_buscar = $('#precio_maximo_buscar').val(); */
     area_minima_buscar = $('#area_minima_buscar').val();
     area_maxima_buscar = $('#area_maxima_buscar').val();
+    price = $('#price').val();
     /* precio = $('#pre').val(); */
 
 
@@ -190,25 +251,31 @@ var busqueda = function () {
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banos_buscar = existeCampo(banos_buscar);
-    precio_minimo_buscar = existeCampo(precio_minimo_buscar);
-    precio_maximo_buscar = existeCampo(precio_maximo_buscar);
+    /* precio_minimo_buscar = existeCampo(precio_minimo_buscar);
+    precio_maximo_buscar = existeCampo(precio_maximo_buscar); */
     area_minima_buscar = existeCampo(area_minima_buscar);
     area_maxima_buscar = existeCampo(area_maxima_buscar);
     /* precio = existeCampo(precio); */
+    var element = null;
+    for (let index = 0; index < optionsSelect.length; index++) {
+        if (price == optionsSelect[index].Id) {
+            element = optionsSelect[index];
+        }
+    }
 
     if (code !== "") {
         window.location.href = 'detalle-Inmueble.php?co=951-' + code + '';
     } else {
         window.location.href = 'inmuebles.php?ci=' + ciudad_buscar +
-            '&&bar=' + barrio_buscar +
-            '&&ge=' + gestion_buscar +
-            '&&in=' + tipo_inmueble_buscar +
-            '&&al=' + alcobas_buscar +
-            '&&ban=' + banos_buscar +
-            '&&premin=' + precio_minimo_buscar +
-            '&&premax=' + precio_maximo_buscar +
-            '&&armin=' + area_minima_buscar +
-            '&&armax=' + area_maxima_buscar +
+            '&bar=' + barrio_buscar +
+            '&ge=' + gestion_buscar +
+            '&in=' + tipo_inmueble_buscar +
+            '&al=' + alcobas_buscar +
+            '&ban=' + banos_buscar +
+            '&premin=' + element.premin +
+            '&premax=' + element.premax +
+            '&armin=' + area_minima_buscar +
+            '&armax=' + area_maxima_buscar +
             '';
     }
 }

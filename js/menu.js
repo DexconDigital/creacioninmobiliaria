@@ -6,7 +6,7 @@ const changesize = mql => {
                 $(".logo").addClass('scroll');
                 $(".alto-opciones").addClass('scroll');
             } else {
-                $(".logo").removeClass('scroll');
+                $(".logo").removeClass('scroll'); 
                 $(".alto-opciones").removeClass('scroll');
             }
         });

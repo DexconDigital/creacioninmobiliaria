@@ -41,7 +41,7 @@ function modelo_noticia($r)
                                 <h5 class="card-title">'.$r[$i]['titulo'].'</h5>
                                 <p class="card-text">'.$r[$i]['descripcion'].'</p>
                                 <p class="card-text"><small class="text-muted">'.$r[$i]['fecha'].'</small></p>
-                                <a href="detalle-blog.php?co='.$r[$i]['id'].'" class="btn btn-primary float-right">Ver Proyecto</a>
+                                <a href="detalle-blog.php?co='.$r[$i]['id'].'" class="btn btn-primary float-right" style="margin-bottom: 12px;">Ver Proyecto</a>
                             </div>
                         </div>
                     </div>

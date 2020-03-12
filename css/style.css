@@ -19,6 +19,11 @@ a{
     text-decoration: none;
     color: inherit;
 }
+#politicas{
+  font-weight: bold;
+  color: #13223f;
+  
+}
 a:hover{
         color: #13223f;
 }
@@ -319,6 +324,10 @@ figure{
 /* consigna inmueble */
 #consigna .container-fluid .border{
     padding: 25px 10px;
+    padding-bottom: 6%;
+}
+.margen{
+  margin-bottom:9px !important;
 }
 
 /* Diseños de blog */
@@ -405,6 +414,7 @@ footer a:hover{
 }
 
 @media (min-width: 768px) { 
+
 }
 
 @media (min-width: 992px) { 

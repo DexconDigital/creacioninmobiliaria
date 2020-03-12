@@ -6,14 +6,15 @@ use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';
 
 if ($_POST) {
-    $email = $_POST['email'];
-    $nombre = $_POST['name'];
+    $asunto = $_POST['asunto'];
+    $nombre = $_POST['nombre'];
+    $email = $_POST['correo'];
+    $telefono = $_POST['telefono'];
     $mensaje = $_POST['mensaje'];
 }
-
 $mail = new PHPMailer(true);
 
-try{
+try {
     $mail->isSMTP();
 
     $mail->Host = 'smtp.gmail.com';
@@ -27,31 +28,28 @@ try{
     $mail->Port = 587;
 
     // Mensaje para enviar
-    
+
     $mail->isHTML(true);
     //Cabecera
-    $mail->setFrom('GomezyAsociados@GomezyAsociados.com', 'GomezyAsociados@GomezyAsociados.com');
+    $mail->setFrom('Creacion@Creacioninmobiliaria.com', 'Creacion@Creacioninmobiliaria.com');
     //destinos
-    $mail->addAddress('wdsp9898@gmail.com');
-    $mail->addAddress('ceo@dexcondigital.com');
-    $mail->addAddress('gestion@dexcondigital.com');
+    // $mail->addAddress(' info@creacioninmobiliaria.com');
+    
 
-    $mail->Subject='Mensaje desde la pagina web de Inmobiliaria Gomes y Asociados sección Contactos';
-    $mail->Body = '<span>Hola, '.$nombre.' quiere ser contactado por ustedes. </span>
-                    <h4>Sus datos son:</h4>
+    $mail->Subject = 'Mensaje desde la página web Creación Inmobiliaria sección contáctenos';
+    $mail->Body = '<span>Hola, ' . $nombre . ' quiere realizar una solicitud de <strong>' . $asunto . '</strong>. </span>
+                    <h4>Sus datos de contacto son:</h4>
                     <ul>
-                        <li>Correo: '.$email.'</li>
-                        <li>Mensaje: '.$mensaje.'</li>
+                        <li>Correo: ' . $email . '</li>
+                        <li>Telefono: ' . $telefono . '</li>
+                        <li>Mensaje: ' . $mensaje . '</li>
                     </ul>
     ';
     $mail->send();
     echo "<script language='javascript'>
     alert('Mensaje enviado, muchas gracias.');
-        window.location.href='.././contactanos.php'
+        window.location.href='.././contacto.php'
          </script>";
-  
-
-}catch(Exception $e){
-    echo 'algo salio mal' , $e->getMessage();
+} catch (Exception $e) {
+    echo 'algo salio mal', $e->getMessage();
 }
-?>

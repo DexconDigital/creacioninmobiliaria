@@ -16,8 +16,8 @@ $tipo = $_FILES['archivo']['type'];
 $tamanio = $_FILES['archivo']['size'];
 $rutas = $_FILES['archivo']['tmp_name'];
 $nombre_archivo = str_replace(" ","-",$nombre_ar);
-$destinos="archivos/".$nombre_archivo;
-$comparador_archivo="archivos/";
+$destinos="archivo/".$nombre_archivo;
+$comparador_archivo="archivo/";
 
 // No actualizar ni archivos ni noticias
 if($destino == $comparador_fotos && $destinos == $comparador_archivo){

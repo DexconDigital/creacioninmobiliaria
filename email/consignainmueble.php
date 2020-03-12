@@ -44,10 +44,11 @@ try{
     
     $mail->isHTML(true);
     $mail->setFrom('Creacion@Creacioninmobiliaria.com', 'Creacion@Creacioninmobiliaria.com');
-    /* $mail->addAddress('wdsp9898@gmail.com');
-    $mail->addAddress('ceo@dexcondigital.com');
-    $mail->addAddress('gestion@dexcondigital.com'); */
-
+    //destinos
+    // $mail->addAddress(' info@creacioninmobiliaria.com');
+    
+    
+    
     $mail->Subject='Mensaje desde la pagina web de Inmobiliaria Creación inmobiliaria.';
     $mail->Body = '<span>Hola, '.$nombre.' quiere recibir información sobre como consignar un inmueble.</span>
                     <h4>Sus datos de contacto son:</h4>

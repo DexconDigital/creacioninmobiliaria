@@ -35,14 +35,29 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+             <!--    <div class="col-12 col-md-6 col-lg-auto form-group">
+                    <input type="number" id="precio_minimo_buscar" class="form-control" placeholder="Precio Mínimo">
+                </div> -->
                 <div class="col-12 col-md-6 col-lg-auto form-group">
-                    <input type="number" id="precio_minimo_buscar"  class="form-control" placeholder="Precio Mínimo">
+                    <select id="price" class="form-control">
+                        <option value="0">Precio</option>
+                        <option value="1">$ 500.000 a $ 1.000.000</option>
+                        <option value="2">$ 1.000.000 a $ 5.000.000</option>
+                        <option value="3">$ 5.000.000 a $ 8.000.000</option>
+                        <option value="4">$ 8.000.000 a $ 30.000.000</option>
+                        <option value="5">$ 30.000.000 a $ 50.000.000</option>
+                        <option value="6">$ 50.000.000 a $ 300.000.000</option>
+                        <option value="7">$ 300.000.000 a $ 600.000.000</option>
+                        <option value="8">$ 600.000.000 a $ 1.000.000.000</option>
+                        <option value="9">$1.000.000.000 a $ 2.000.000.000</option>
+                        <option value="10">$2.000.000.000 a $ 12.000.000.000</option>
+                    </select>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg form-group">
-                    <input type="number" id="precio_maximo_buscar"  class="form-control" placeholder="Precio Máximo">
-                </div>
-               
+                <!-- <div class="col-12 col-md-6 col-lg form-group">
+                    <input type="number" id="precio_maximo_buscar" class="form-control" placeholder="Precio Máximo">
+                </div> -->
+
                 <div class="col-12 col-md-6 col-lg form-group">
                     <input type="number" id="area_minima_buscar" class="form-control" placeholder="Área Mínima">
                 </div>

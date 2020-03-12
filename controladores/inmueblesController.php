@@ -117,7 +117,11 @@ function existeImagen($r)
 
 $valor_reemplazar = '&pag='.$pag.'';
 $url_pagina = str_ireplace($valor_reemplazar, '', $url_pagina);
-$totalItems = $r['datosGrales']['totalInmuebles'];
+if(isset($r['datosGrales'])){
+    $totalItems = $r['datosGrales']['totalInmuebles']; 
+}else {
+    $totalItems = 0;
+}
 $itemsPerPage = 12;
 $currentPage = $pag;
 $urlPattern = $url_pagina.'&pag=(:num)';

@@ -82,24 +82,18 @@ require_once('controladores/inmueblesController.php');
             </div>
         </div>
     </section>
+    <!-- footer -->
     <div class="espacio-footer"></div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-10 col-sm-12 text-center">
-                    <span>©Copyright 2020 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'include/footer.php' ?>
+    </div>
     <script src="js/jquery.min.js"></script>
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
     ?>
-    <script src="conexion_api/token_api.js"></script>;
-    <script src="conexion_api/validadores.js"></script>;
-    <script src="conexion_api/buscador.js"></script>;
+    <script src="conexion_api/token_api.js"></script>
+    <script src="conexion_api/validadores.js"></script>
+    <script src="conexion_api/buscador.js"></script>
 </body>
 
 </html>

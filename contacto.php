@@ -10,9 +10,9 @@
     <title>Contacto</title>
     <?php include 'include/archivosheader.php'; ?>
     <style>
-    body{
-        overflow-x:hidden;
-    }
+        body {
+            overflow-x: hidden;
+        }
     </style>
 </head>
 
@@ -60,61 +60,56 @@
             <hr>
             <div class="row justify-content-center">
                 <div class="col-11 col-md-10 col-lg-7">
-                    <form action="">
+                    <form action="email/enviarCorreo.php" method="POST">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">¿Cuál es tu solicitud?</label>
-                            <select class="form-control" id="">
+                            <select class="form-control" name="asunto">
                                 <option selected disabled>Seleccionar</option>
-                                <option>Vender</option>
-                                <option>Arrendar</option>
-                                <option>Comprar</option>
-                                <option>Asesoría</option>
+                                <option value="Vender">Vender</option>
+                                <option value="Arrendar">Arrendar</option>
+                                <option value="Comprar">Comprar</option>
+                                <option value="Asesoría">Asesoría</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nombre</label>
-                            <input type="text" class="form-control" id="" placeholder="Ingrese su Nombre">
+                            <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Nombre" required>
                         </div>
                         <div class="form-group">
                             <label for="">Correo</label>
-                            <input type="email" class="form-control" id="" placeholder="Ingrese Correo">
+                            <input type="email" class="form-control" name="correo" placeholder="Ingrese Correo">
                         </div>
                         <div class="form-group">
                             <label for="">Teléfono</label>
-                            <input type="number" class="form-control" id="" placeholder="Ingrese teléfono">
+                            <input type="number" class="form-control" name="telefono" placeholder="Ingrese teléfono" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Mensaje:</label>
-                            <textarea class="form-control" id="" placeholder="Deje su mensaje" rows="3"></textarea>
+                            <textarea class="form-control" name="mensaje" placeholder="Deje su mensaje" rows="3" required></textarea>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" required>
                                 <label class="form-check-label" for="gridCheck">
-                                Acepto la <a href="politica_de_datos.pdf" download="Politica de datos"/>política de privacidad</a> 
+                                    Acepto la <a id="politicas" href="politica_de_datos.pdf" download="Politica de datos" />política de privacidad</a>
                                 </label>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <div class="espacio-footer"></div><footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-10 col-sm-12 text-center">
-                    <span>©Copyright 2019 <a href="https://www.dexcondigital.com" target="_blank">Dexcon Digital.</a> Todos los derechos reservados</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- footer -->
+    <div class="espacio-footer"></div>
+    <?php include 'include/footer.php' ?>
+    </div>
     <!-- Scripts en comun -->
-    <?php 
+    <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
-     ?>
+    ?>
 </body>
 
 </html>
