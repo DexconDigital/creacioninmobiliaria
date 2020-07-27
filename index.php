@@ -1,5 +1,5 @@
 <?php $page = 'inicio';
-require_once('controladores/indexController.php');
+require 'controladores/indexController.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -68,7 +68,35 @@ require_once('controladores/indexController.php');
     #consigna .margen {
         margin-bottom: 4rem !important;
     }
+
+    .boton_footer {
+        color: white;
+        background-color: #13223F;
+    }
+
+    .boton_footer:hover {
+        color: #13223F;
+        background-color: white;
+        border: 1px solid #13223F;
+    }
+
+    .color_enalce {
+        color: #13223F;
+    }
+
+    .color_icono {
+        font-size: 22px;
+        color: #13223F;
+    }
 </style>
+<script src="js/jquery.min.js"></script>
+<!-- <script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('#myModal').modal('show')
+        }, 3000)    
+    });
+</script> -->
 
 <body>
     <link itemprop="thumbnailUrl" href="http://www.creacioninmobiliaria.com/images/logo_blanco.jpg">
@@ -216,12 +244,11 @@ require_once('controladores/indexController.php');
             <div class="row justify-content-center">
                 <div class="col-11">
                     <div class="row justify-content-center" id="">
-                        <?php if ($r == 'Sin resultados') {
-                            echo '<h2 class="text-center">
-                                No Tiene Inmuebles Destacados
-                            </h2>';
+                        <?php
+                        if (is_array($api)) {
+                            modelo_inmueble($api);
                         } else {
-                            modelo_inmueble($r);
+                            echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
                         }
                         ?>
                     </div>
@@ -411,7 +438,27 @@ require_once('controladores/indexController.php');
     </div>
     <!-- Fin del modal -->
     <!-- Scripts en comun -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle text-center">Comunicado Importante</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe src="Comunicado_Covid_19_2020.pdf" width="700" height="500" style="border: none;"></iframe>
 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn boton_footer" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <?php
     include 'include/archivosfooter.php';
     include 'include/boton-subir.php';
